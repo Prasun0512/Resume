@@ -1,6 +1,19 @@
-title: Minimal theme
-logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
-theme: jekyll-theme-minimal
+title: <p align="center"> Prasun Kumar </p>
+<p align="center">Senior Software Enginieer ML/AI </p>
+logo: /assets/img/logo.jpg
+
+description:
+  <p align="center">
+  <a href="Prasun_Kumar_Resume Ml.pdf">Resume</a> |
+  <a href="https://www.linkedin.com/in/prasun-kumar-1708/">LinkedIn</a> |
+  <a href="https://github.com/Prasun0512">GitHub</a>
+  
+  <br>     
+  As part of my current role I'm Exploring New AI models like Deepface,Multilingual TTS  and Customizing it.
+  Persuing PGDM in ML and AI from iiitb,Banglore
+  <br>
+  </p>
+  
+  <br>
+theme: jekyll-theme-minimal 
+
