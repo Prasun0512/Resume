@@ -28,7 +28,7 @@ In cancer, there are over 200 different forms. Out of 200, melanoma is the deadl
 
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/Prasun0512/Melanoma-Detection-Assignment)
 
-### Lunc Cancer Detection 
+### Lung Cancer Detection 
 This repository contains code for detecting lung cancer using X-ray images. The goal of this project is to use machine learning to identify suspicious regions in X-ray images that may indicate the presence of lung cancer.
 
 The code is implemented in Python and uses various libraries such as TensorFlow, Keras, and OpenCV. The dataset used for training and testing the model is the publicly available LIDC-IDRI dataset, which consists of a large number of CT scans of the chest
