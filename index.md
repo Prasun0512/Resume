@@ -1,6 +1,6 @@
 # Data Science Portfolio
 ---
-## Machine learning
+## Machine learning & Artificial Intelligence
 
 ### Employee Emotion Detection
 
