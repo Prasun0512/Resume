@@ -35,3 +35,14 @@ The code is implemented in Python and uses various libraries such as TensorFlow,
 
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/Prasun0512/-Lung-Cancer-Detection/)
 
+### Smart-TV Gesture Recognition Feature Development
+
+In the era of smart technology, our home electronics company is committed to enhancing the user experience with our state-of-the-art smart televisions. We are embarking on an exciting project to develop a cutting-edge feature that will revolutionize the way users interact with their TVs. This project aims to create a Gesture Recognition System, allowing users to control their smart TVs effortlessly without the need for a remote control.
+
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/Prasun0512/Neural-Networks-Project---Gesture-Recognition)
+
+### Resturant ChatBOT -Related Chatbot for Chefs 
+I have developed an innovative chatbot that serves as a valuable resource for chefs and culinary enthusiasts. This chatbot is designed to provide chefs with quick and informative responses to their recipe-related questions. Leveraging cutting-edge technologies such as Elasticsearch, BERT (Bidirectional Encoder Representations from Transformers), the AllenNLP Python API, AWS Lex, and AWS Comprehend, this chatbot offers a robust and intuitive platform for culinary inquiries.
+
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/Prasun0512/ResturantChatbot)
+
