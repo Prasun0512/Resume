@@ -13,7 +13,7 @@
         <a href="https://www.youtube.com/@AIWizardry277">YouTube</a>
     </p>
     <p align="center">
-        ML & AI Engineer with {{ site.time | plus: 0  | date:"%Y"  minus: 2017  }}   + years of experience currently pursuing <b>PGDM in ML and AI</b>. With my strong background in Python and software development knowledge along with extensive machine learning concepts, I am confident that I can contribute significantly to any organization seeking to implement ML solutions.
+        ML & AI Engineer with 7+ years of experience currently pursuing <b>PGDM in ML and AI</b>. With my strong background in Python and software development knowledge along with extensive machine learning concepts, I am confident that I can contribute significantly to any organization seeking to implement ML solutions.
     </p>
 </body>
 </html>
