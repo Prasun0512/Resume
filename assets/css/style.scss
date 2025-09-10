@@ -1,4 +1,11 @@
-/* Constrain the header logo */
+---
+---
+
+/* Pull in the theme base styles */
+@import "jekyll-theme-minimal";
+
+/* Your custom additions */
+/* Header logo size */
 header img { max-width: 120px; height: auto; border-radius: 8px; }
 
 /* Project grid and cards */
