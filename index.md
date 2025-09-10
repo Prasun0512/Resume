@@ -1,4 +1,4 @@
-# 🚀 Data Science Portfolio  
+## 🚀 Data Science Portfolio  
 
 A showcase of my projects in **Machine Learning, Artificial Intelligence, NLP, and Computer Vision**. Each project demonstrates practical applications, real-world problem solving, and hands-on expertise in deploying AI/ML solutions.  
 
