@@ -1,3 +1,7 @@
+title: "Prasun Kumar — AI/ML Technical Lead"
+url: "https://prasun0512.github.io"
+baseurl: "/Resume"     # important for proper absolute links
+
 logo: /assets/img/logo.jpg
 
 description: |
@@ -5,14 +9,17 @@ description: |
   <a href="./Prasun_Kumar.pdf">Resume</a> |
   <a href="https://www.linkedin.com/in/prasun-kumar-1708/">LinkedIn</a> |
   <a href="https://github.com/Prasun0512">GitHub</a> |
-  <a href="https://www.youtube.com/@AIWizardry277">YouTube</a>  
+  <a href="https://www.youtube.com/@AIWizardry277">YouTube</a>
   <br> ML & AI Lead with over %%YEARS%%+ years of experience. I have completed my <b>PGDM in ML and AI</b>
   (<a href="https://www.credential.net/20453200-981b-4985-9ddf-2a44c5ee66cf#gs.cq8xsj">Credential</a>).
   </p>
 
-theme: jekyll-theme-minimal
-github:
-  is_project_page: false
-exclude:
-  - another-page.md
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
+# Optional: improve SEO previews
+social:
+  links:
+    - https://github.com/Prasun0512
+    - https://www.linkedin.com/in/prasun-kumar-1708/
