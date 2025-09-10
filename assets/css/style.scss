@@ -31,3 +31,16 @@
   background: #0366d6;
   color: #fff;
 }
+
+/* Badges row */
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin: 10px 0 18px;
+}
+.badges img {
+  height: 22px; /* keep badges uniform */
+}
+
