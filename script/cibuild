@@ -12,7 +12,9 @@ bundle exec htmlproofer ./_site \
   --http-status-ignore "999,403,429" \
   --url-ignore "https://www.linkedin.com/in/prasun-kumar-1708/" \
   --file-ignore "./_site/another-page.html" \
+  --url-swap "^/Resume/:/" \
   --typhoeus-config '{"timeout":20,"connecttimeout":10,"followlocation":true}'
+
 
 # RuboCop (fail on errors; warnings ok if you want stricter: remove --fail-level)
 bundle exec rubocop -D --fail-level E --config .rubocop.yml
