@@ -14,3 +14,15 @@
 }
 .btn:hover { background: #0366d6; color: #fff; }
 
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 12px;
+}
+.project-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 14px;
+}
+.project-card h3 { margin-top: 0; }
