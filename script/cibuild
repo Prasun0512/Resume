@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 set -euo pipefail
 
 # Build the site
@@ -15,11 +14,11 @@ bundle exec htmlproofer ./_site \
   --file-ignore "./_site/another-page.html" \
   --typhoeus-config '{"timeout":20,"connecttimeout":10,"followlocation":true}'
 
-# Lint Ruby (keep failing on style issues if any)
-bundle exec rubocop -D --config .rubocop.yml
+# RuboCop (fail on errors; warnings ok if you want stricter: remove --fail-level)
+bundle exec rubocop -D --fail-level E --config .rubocop.yml
 
-# Any extra HTML validations you already run
+# Extra HTML validation (now robust)
 bundle exec script/validate-html
 
-# Build the theme gem (if present)
+# Build the gem (if present)
 gem build jekyll-theme-minimal.gemspec
