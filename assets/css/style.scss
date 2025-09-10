@@ -1,8 +1,23 @@
----
----
+/* Simple project grid + buttons */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 12px;
+}
 
-@import "jekyll-theme-minimal";
+.project-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 14px;
+  background: #fff;
+}
 
+.project-card h3 {
+  margin-top: 0;
+}
+
+/* Button style */
 .btn {
   display: inline-block;
   padding: 6px 12px;
@@ -12,17 +27,7 @@
   font-weight: 600;
   line-height: 1.2;
 }
-.btn:hover { background: #0366d6; color: #fff; }
-
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 16px;
-  margin-top: 12px;
+.btn:hover {
+  background: #0366d6;
+  color: #fff;
 }
-.project-card {
-  border: 1px solid #e5e7eb;
-  border-radius: 10px;
-  padding: 14px;
-}
-.project-card h3 { margin-top: 0; }
