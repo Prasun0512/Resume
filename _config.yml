@@ -13,3 +13,6 @@ description: |
 theme: jekyll-theme-minimal
 github:
   is_project_page: false
+exclude:
+  - another-page.md
+
