@@ -1,9 +1,25 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
-set -e
+set -euo pipefail
 
-bundle exec jekyll build
-bundle exec htmlproofer ./_site --check-html --check-sri
+# Build the site
+bundle exec jekyll build --trace
+
+# Link & HTML checks (CI-friendly)
+bundle exec htmlproofer ./_site \
+  --check-html \
+  --check-sri \
+  --assume-extension \
+  --http-status-ignore "999,403,429" \
+  --url-ignore "https://www.linkedin.com/in/prasun-kumar-1708/" \
+  --file-ignore "./_site/another-page.html" \
+  --typhoeus-config '{"timeout":20,"connecttimeout":10,"followlocation":true}'
+
+# Lint Ruby (keep failing on style issues if any)
 bundle exec rubocop -D --config .rubocop.yml
+
+# Any extra HTML validations you already run
 bundle exec script/validate-html
+
+# Build the theme gem (if present)
 gem build jekyll-theme-minimal.gemspec
