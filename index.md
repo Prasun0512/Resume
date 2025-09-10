@@ -9,7 +9,7 @@ A showcase of my projects in **Machine Learning, Artificial Intelligence, NLP, a
 
 ### ⚙️ Tech Stack
 
-<div class="badges">
+<div class="badges" markdown="1">
 
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
@@ -27,6 +27,7 @@ A showcase of my projects in **Machine Learning, Artificial Intelligence, NLP, a
 [![Jekyll](https://img.shields.io/badge/Jekyll-CC0000?logo=jekyll&logoColor=white)](https://jekyllrb.com/)
 
 </div>
+
 
 <div class="projects" markdown="1">
 
