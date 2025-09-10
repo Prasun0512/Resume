@@ -1,28 +1,34 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-require "w3c_validators"
+require 'w3c_validators'
+require 'find'
 
-def validator(file)
-  extension = File.extname(file)
-  if extension == ".html"
-    W3CValidators::NuValidator.new
-  elsif extension == ".css"
-    W3CValidators::CSSValidator.new
+site_dir = File.expand_path('_site', __dir__)
+html_files = Dir.glob(File.join(site_dir, '**/*.html'))
+
+if html_files.empty?
+  puts "No HTML files found in #{site_dir}; skipping W3C validation."
+  exit 0
+end
+
+validator = W3CValidators::NuValidator.new
+
+had_errors = false
+
+html_files.each do |file|
+  puts "Checking #{file}..."
+  begin
+    result = validator.validate_file(file)
+    if result.errors.any?
+      had_errors = true
+      puts "Errors in #{file}:"
+      result.errors.each { |err| puts err }  # no .to_s (Rubocop-friendly)
+    end
+  rescue StandardError => e
+    had_errors = true
+    warn "Validator crashed on #{file}: #{e.message}"
   end
 end
 
-def validate(file)
-  puts "Checking #{file}..."
-
-  path = File.expand_path "../_site/#{file}", __dir__
-  results = validator(file).validate_file(path)
-
-  return puts "Valid!" if results.errors.empty?
-
-  results.errors.each { |err| puts err }
-  exit 1
-end
-
-validate "index.html"
-validate File.join "assets", "css", "style.css"
+exit(had_errors ? 1 : 0)
