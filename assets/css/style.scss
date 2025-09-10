@@ -1,23 +1,22 @@
-/* Simple project grid + buttons */
+/* Constrain the header logo */
+header img { max-width: 120px; height: auto; border-radius: 8px; }
+
+/* Project grid and cards */
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 16px;
   margin-top: 12px;
 }
-
 .project-card {
   border: 1px solid #e5e7eb;
   border-radius: 10px;
   padding: 14px;
   background: #fff;
 }
+.project-card h3 { margin-top: 0; }
 
-.project-card h3 {
-  margin-top: 0;
-}
-
-/* Button style */
+/* Buttons */
 .btn {
   display: inline-block;
   padding: 6px 12px;
@@ -27,10 +26,7 @@
   font-weight: 600;
   line-height: 1.2;
 }
-.btn:hover {
-  background: #0366d6;
-  color: #fff;
-}
+.btn:hover { background: #0366d6; color: #fff; }
 
 /* Badges row */
 .badges {
@@ -40,7 +36,4 @@
   align-items: center;
   margin: 10px 0 18px;
 }
-.badges img {
-  height: 22px; /* keep badges uniform */
-}
-
+.badges img { height: 22px; }
