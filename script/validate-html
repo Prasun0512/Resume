@@ -1,11 +1,11 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-require 'w3c_validators'
-require 'find'
+require "w3c_validators"
+require "find"
 
-site_dir = File.expand_path('_site', __dir__)
-html_files = Dir.glob(File.join(site_dir, '**/*.html'))
+site_dir = File.expand_path("_site", __dir__)
+html_files = Dir.glob(File.join(site_dir, "**/*.html"))
 
 if html_files.empty?
   puts "No HTML files found in #{site_dir}; skipping W3C validation."
@@ -23,7 +23,7 @@ html_files.each do |file|
     if result.errors.any?
       had_errors = true
       puts "Errors in #{file}:"
-      result.errors.each { |err| puts err }  # no .to_s (Rubocop-friendly)
+      result.errors.each { |err| puts err } # puts already stringifies
     end
   rescue StandardError => e
     had_errors = true
