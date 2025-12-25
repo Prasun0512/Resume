@@ -4,36 +4,198 @@
 /* Pull in the theme base styles */
 @import "jekyll-theme-minimal";
 
-/* Your custom additions */
+/* ===========================
+   Modern AI/ML + Security style
+   =========================== */
+
+:root {
+  --bg: #050816;
+  --bg-alt: #0b1020;
+  --card: rgba(15, 23, 42, 0.92);
+  --border: rgba(148, 163, 184, 0.22);
+  --text: #eef2ff;
+  --muted: rgba(226, 232, 240, 0.72);
+
+  --primary: #6366f1;      /* Indigo */
+  --primary-2: #7c3aed;    /* Violet */
+  --accent: #22c55e;       /* Green (security hint) */
+  --cyan: #06b6d4;
+
+  --radius: 14px;
+  --shadow: 0 18px 45px rgba(0, 0, 0, 0.55);
+  --shadow-soft: 0 10px 26px rgba(0, 0, 0, 0.4);
+  --transition: 0.18s ease-out;
+}
+
+/* Page background + typography */
+html, body {
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(circle at top, #111827 0, #020617 48%, #000 100%);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.65;
+}
+
+/* Links */
+a {
+  color: var(--text);
+  text-decoration-color: rgba(99, 102, 241, 0.7);
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration-color: rgba(34, 197, 94, 0.75);
+}
+
+/* Headings (more “portfolio” feel) */
+h1, h2, h3 {
+  color: #ffffff;
+}
+
+h2 {
+  margin-top: 1.1rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+h3 {
+  margin-top: 0.3rem;
+  font-size: 1.05rem;
+}
+
+/* Theme layout helpers (jekyll-theme-minimal uses a wrapper + header/section) */
+.wrapper {
+  max-width: 980px;
+}
+
+/* Make content readable on dark background */
+section, header {
+  color: var(--text);
+}
+
+/* Header “card” effect */
+header {
+  background: linear-gradient(
+    to bottom right,
+    rgba(15, 23, 42, 0.92),
+    rgba(2, 6, 23, 0.92)
+  );
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) + 2px);
+  padding: 16px;
+  box-shadow: var(--shadow-soft);
+}
+
 /* Header logo size */
-header img { max-width: 120px; height: auto; border-radius: 8px; }
+header img {
+  max-width: 120px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
+}
+
+/* Subtle “scanner” glow line (security vibe) */
+header::after {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-top: 14px;
+  background: linear-gradient(to right, transparent, rgba(34, 197, 94, 0.7), transparent);
+  opacity: 0.7;
+}
+
+/* Make the main content area feel like a panel */
+section {
+  background: rgba(2, 6, 23, 0.35);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: calc(var(--radius) + 2px);
+  padding: 18px;
+  box-shadow: var(--shadow-soft);
+}
 
 /* Project grid and cards */
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 16px;
-  margin-top: 12px;
+  margin-top: 14px;
 }
+
+/* Card with gradient border */
 .project-card {
-  border: 1px solid #e5e7eb;
-  border-radius: 10px;
+  position: relative;
+  border-radius: var(--radius);
   padding: 14px;
-  background: #fff;
+  background: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-soft);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  overflow: hidden;
 }
-.project-card h3 { margin-top: 0; }
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    120deg,
+    rgba(99, 102, 241, 0.65),
+    rgba(34, 197, 94, 0.45),
+    rgba(6, 182, 212, 0.35)
+  );
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  border-color: rgba(99, 102, 241, 0.35);
+}
+
+/* Card text */
+.project-card p {
+  color: rgba(226, 232, 240, 0.82);
+}
+
+.project-card strong {
+  color: #ffffff;
+}
 
 /* Buttons */
 .btn {
   display: inline-block;
-  padding: 6px 12px;
-  border: 1px solid #0366d6;
-  border-radius: 6px;
+  padding: 7px 12px;
+  border-radius: 999px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.2;
+  border: 1px solid rgba(99, 102, 241, 0.55);
+  background: rgba(15, 23, 42, 0.75);
+  color: #e5e7eb;
+  transition: transform var(--transition), box-shadow var(--transition), background var(--transition), border-color var(--transition);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
 }
-.btn:hover { background: #0366d6; color: #fff; }
+
+.btn:hover {
+  transform: translateY(-1px);
+  background: radial-gradient(circle at top left, rgba(99, 102, 241, 0.75), rgba(124, 58, 237, 0.75));
+  border-color: rgba(34, 197, 94, 0.6);
+  color: #ffffff;
+}
 
 /* Badges row */
 .badges {
@@ -43,4 +205,37 @@ header img { max-width: 120px; height: auto; border-radius: 8px; }
   align-items: center;
   margin: 10px 0 18px;
 }
-.badges img { height: 22px; }
+
+.badges img {
+  height: 22px;
+  border-radius: 6px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+}
+
+/* Lists look nicer on dark */
+ul, ol {
+  color: rgba(226, 232, 240, 0.86);
+}
+
+/* Code blocks (optional but helps tech vibe) */
+pre, code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+pre {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 12px;
+  padding: 12px;
+  overflow: auto;
+}
+
+/* Mobile spacing */
+@media (max-width: 760px) {
+  header, section {
+    padding: 14px;
+  }
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
