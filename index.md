@@ -5,18 +5,18 @@ title: Portfolio
 
 ## 🚀 AI/ML + GenAI Portfolio (Lead/Architect)
 
-A showcase of my work across **Generative AI, NLP, LLMOps/MLOps, Computer Vision, and production automation**.  
-Most projects are **production-minded**, focused on **quality, safety (PHI/PII), monitoring, and measurable outcomes**.
+A showcase of my work across Generative AI, NLP, LLMOps/MLOps, Computer Vision, and production automation.  
+Most projects are production-minded, focused on quality, safety (PHI/PII), monitoring, and measurable outcomes.
 
 ---
 
 ## 🧠 What I Build
 
-- **RAG & Knowledge Systems**: hybrid retrieval, grounding strategies, eval-driven improvements  
-- **LLMOps / MLOps**: MLflow tracking, model registry/versioning, evaluation suites, monitoring dashboards  
-- **Applied NLP**: multi-label classification, NER, document intelligence, explainability + evidence highlighting  
-- **Secure AI Pipelines**: PHI/PII masking, compliance-aware artifacts, audit-ready outputs  
-- **Computer Vision**: real-time detection pipelines, gesture systems, event triggers  
+- RAG & Knowledge Systems: hybrid retrieval, grounding strategies, eval-driven improvements  
+- LLMOps / MLOps: MLflow tracking, model registry/versioning, evaluation suites, monitoring dashboards  
+- Applied NLP: multi-label classification, NER, document intelligence, explainability + evidence highlighting  
+- Secure AI Pipelines: PHI/PII masking, compliance-aware artifacts, audit-ready outputs  
+- Computer Vision: real-time detection pipelines, gesture systems, event triggers  
 
 ---
 
