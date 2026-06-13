@@ -420,7 +420,7 @@ multiple linear regression, and industry relevance examples.
 
 <div markdown="1">
 **Harbinger Group** - Technical Lead, AI and ML<br>
-Apr 2025 - Present
+Aug 2024 - Present
 </div>
 
 <div markdown="1">
