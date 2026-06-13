@@ -80,15 +80,49 @@ body.cursor-idle::before {
   opacity: 0.36;
 }
 
-.cursor-trail-canvas {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 30;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
+body #magicMouseCursor {
+  z-index: 35;
+  border-color: rgba(34, 211, 238, 0.78);
+  box-shadow:
+    0 0 18px rgba(34, 211, 238, 0.34),
+    inset 0 0 18px rgba(167, 139, 250, 0.14);
   mix-blend-mode: screen;
+}
+
+body #magicMouseCursor.is-hover {
+  border-color: rgba(167, 139, 250, 0.9);
+  box-shadow:
+    0 0 24px rgba(167, 139, 250, 0.42),
+    inset 0 0 20px rgba(34, 211, 238, 0.16);
+}
+
+body #magicPointer {
+  z-index: 36;
+  background: #22d3ee;
+  box-shadow:
+    0 0 12px rgba(34, 211, 238, 0.78),
+    0 0 26px rgba(167, 139, 250, 0.32);
+}
+
+body #magicPointer.pointer-blur {
+  width: 44px;
+  height: 44px;
+  border-color: rgba(34, 211, 238, 0.58);
+  background: rgba(34, 211, 238, 0.05);
+  box-shadow:
+    0 0 24px rgba(34, 211, 238, 0.36),
+    0 0 42px rgba(167, 139, 250, 0.2);
+}
+
+body #magicPointer.is-hover {
+  background: #a78bfa;
+  box-shadow:
+    0 0 16px rgba(167, 139, 250, 0.7),
+    0 0 32px rgba(244, 114, 182, 0.28);
+}
+
+body.magic-cursor-enabled .magic-hover:hover {
+  cursor: none;
 }
 
 img {
@@ -656,7 +690,8 @@ li {
 
   body::before,
   body::after,
-  .cursor-trail-canvas {
+  #magicMouseCursor,
+  #magicPointer {
     display: none;
   }
 }
@@ -675,7 +710,8 @@ li {
 
   body::before,
   body::after,
-  .cursor-trail-canvas {
+  #magicMouseCursor,
+  #magicPointer {
     display: none;
   }
 }
