@@ -45,7 +45,40 @@
         <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
       </footer>
     </div>
+
+    <section class="profile-assistant" aria-label="AI profile assistant">
+      <button class="assistant-toggle" type="button" aria-expanded="false" aria-controls="profile-assistant-panel">
+        <span>Ask AI</span>
+      </button>
+
+      <div class="assistant-panel" id="profile-assistant-panel" hidden>
+        <div class="assistant-header">
+          <div>
+            <strong>Ask about Prasun</strong>
+            <span>Resume Q&A + JD fit check</span>
+          </div>
+          <button class="assistant-close" type="button" aria-label="Close assistant">Close</button>
+        </div>
+
+        <div class="assistant-messages" aria-live="polite"></div>
+
+        <div class="assistant-prompts" aria-label="Suggested questions">
+          <button type="button" data-question="Summarize Prasun for a recruiter">Recruiter summary</button>
+          <button type="button" data-question="What are Prasun's strongest AI and ML skills?">Top AI skills</button>
+          <button type="button" data-question="Tell me about the email-to-case automation project">Email-to-case</button>
+          <button type="button" data-question="How suitable is Prasun for this job description?">JD match</button>
+        </div>
+
+        <form class="assistant-form">
+          <label class="sr-only" for="assistant-input">Ask a question or paste a job description</label>
+          <textarea id="assistant-input" rows="3" placeholder="Ask about experience, projects, skills, or paste a JD for fit analysis..."></textarea>
+          <button class="btn primary" type="submit">Ask</button>
+        </form>
+      </div>
+    </section>
+
     <script src="{{ '/assets/js/ai-cursor.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+    <script src="{{ '/assets/js/profile-assistant.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
   </body>
 </html>
