@@ -66,6 +66,12 @@ engineering standards, mentoring, and delivery ownership across AI teams.
 
 ## Featured Enterprise AI Work
 
+<p class="section-note">
+  Sanitized architecture notes and starter implementation patterns for the
+  private/internal projects are available in the
+  <a href="https://github.com/Prasun0512/enterprise-ai-ml-case-studies">Enterprise AI/ML Case Studies repository</a>.
+</p>
+
 <div class="projects" markdown="1">
 
 <div class="project-card featured" markdown="1">
