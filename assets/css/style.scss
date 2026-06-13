@@ -672,6 +672,14 @@ li {
   font-size: 0.84rem;
 }
 
+.assistant-header-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 7px;
+}
+
+.assistant-llm-toggle,
 .assistant-close {
   padding: 6px 10px;
   border: 1px solid var(--line);
@@ -682,6 +690,26 @@ li {
   font-size: 0.78rem;
   font-weight: 800;
   cursor: pointer;
+}
+
+.assistant-llm-toggle {
+  border-color: rgba(34, 211, 238, 0.38);
+  color: #ffffff;
+  background: rgba(34, 211, 238, 0.13);
+}
+
+.assistant-llm-toggle:hover,
+.assistant-llm-toggle:focus-visible,
+.assistant-close:hover,
+.assistant-close:focus-visible {
+  outline: none;
+  border-color: rgba(34, 211, 238, 0.55);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.assistant-llm-toggle:disabled {
+  cursor: default;
+  opacity: 0.72;
 }
 
 .assistant-messages {
@@ -718,6 +746,14 @@ li {
   justify-self: start;
   background: rgba(255, 255, 255, 0.075);
   color: var(--muted);
+}
+
+.assistant-message.loading {
+  border-color: rgba(34, 211, 238, 0.26);
+  background:
+    linear-gradient(90deg, rgba(34, 211, 238, 0.09), rgba(167, 139, 250, 0.12), rgba(34, 211, 238, 0.09));
+  background-size: 220% 100%;
+  animation: assistantThinking 1.8s ease-in-out infinite;
 }
 
 .assistant-message.user {
@@ -789,6 +825,20 @@ li {
 .assistant-form .btn {
   min-height: 58px;
   align-self: stretch;
+}
+
+@keyframes assistantThinking {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @media (max-width: 940px) {

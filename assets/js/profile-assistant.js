@@ -96,6 +96,14 @@
     "Leadership": 12
   };
 
+  var llmState = {
+    modelId: "Qwen2-0.5B-Instruct-q4f16_1-MLC",
+    engine: null,
+    loadingPromise: null,
+    enabled: false,
+    failed: false
+  };
+
   function normalize(text) {
     return (text || "").toLowerCase().replace(/[^a-z0-9+#.\s/-]/g, " ");
   }
@@ -119,6 +127,11 @@
     return message;
   }
 
+  function updateMessage(message, html, role) {
+    message.className = "assistant-message " + role;
+    message.innerHTML = html;
+  }
+
   function escapeHtml(text) {
     var element = document.createElement("div");
     element.textContent = text;
@@ -129,6 +142,35 @@
     return "<ul>" + items.map(function (item) {
       return "<li>" + item + "</li>";
     }).join("") + "</ul>";
+  }
+
+  function htmlToText(html) {
+    var element = document.createElement("div");
+    element.innerHTML = html;
+    return element.textContent.replace(/\s+/g, " ").trim();
+  }
+
+  function buildProfileContext() {
+    return [
+      "Candidate: " + profile.name,
+      "Title: " + profile.title,
+      "Location: " + profile.location,
+      "Total experience: " + profile.totalExperience,
+      "Summary: " + profile.summary.join(" "),
+      "Experience:",
+      profile.experience.map(function (item) {
+        return "- " + item.company + " | " + item.role + " | " + item.dates + " | " + item.focus;
+      }).join("\n"),
+      "Major projects:",
+      profile.projects.map(function (item) {
+        return "- " + item.name + ": " + item.answer;
+      }).join("\n"),
+      "Skill categories:",
+      Object.keys(profile.skills).map(function (category) {
+        return "- " + category + ": " + profile.skills[category].join(", ");
+      }).join("\n"),
+      "Contact: " + profile.contact.email + " | LinkedIn: " + profile.contact.linkedin + " | GitHub: " + profile.contact.github + " | Portfolio: " + profile.contact.portfolio
+    ].join("\n");
   }
 
   function answerSummary() {
@@ -292,6 +334,137 @@
     ]);
   }
 
+  function isWebLLMSupported() {
+    return Boolean(window.isSecureContext && navigator.gpu && window.WebAssembly);
+  }
+
+  function setStatus(statusElement, text) {
+    if (statusElement) {
+      statusElement.textContent = text;
+    }
+  }
+
+  function setLlmButton(button, text, disabled) {
+    if (button) {
+      button.textContent = text;
+      button.disabled = Boolean(disabled);
+    }
+  }
+
+  function loadLocalLLM(statusElement, button) {
+    if (llmState.engine) {
+      return Promise.resolve(llmState.engine);
+    }
+
+    if (llmState.loadingPromise) {
+      return llmState.loadingPromise;
+    }
+
+    if (!isWebLLMSupported()) {
+      llmState.failed = true;
+      setStatus(statusElement, "Free LLM needs HTTPS + WebGPU. Using instant mode.");
+      setLlmButton(button, "LLM unavailable", true);
+      return Promise.reject(new Error("WebGPU is not available in this browser."));
+    }
+
+    setStatus(statusElement, "Loading free browser LLM...");
+    setLlmButton(button, "Loading model...", true);
+
+    llmState.loadingPromise = import("https://esm.run/@mlc-ai/web-llm")
+      .then(function (webllm) {
+        return webllm.CreateMLCEngine(llmState.modelId, {
+          initProgressCallback: function (progress) {
+            var percent = progress && typeof progress.progress === "number"
+              ? " " + Math.round(progress.progress * 100) + "%"
+              : "";
+            var text = progress && progress.text ? progress.text : "Loading free browser LLM";
+            setStatus(statusElement, text + percent);
+          }
+        });
+      })
+      .then(function (engine) {
+        llmState.engine = engine;
+        llmState.enabled = true;
+        llmState.failed = false;
+        setStatus(statusElement, "Free LLM mode active - Qwen2 0.5B in browser");
+        setLlmButton(button, "Free LLM Active", true);
+        return engine;
+      })
+      .catch(function (error) {
+        llmState.failed = true;
+        llmState.enabled = false;
+        setStatus(statusElement, "LLM load failed. Using instant resume mode.");
+        setLlmButton(button, "Retry Free LLM", false);
+        llmState.loadingPromise = null;
+        throw error;
+      });
+
+    return llmState.loadingPromise;
+  }
+
+  function buildLlmPrompt(question) {
+    var deterministicAnswer = htmlToText(routeQuestion(question));
+    var jdContext = looksLikeJobDescription(question)
+      ? "\nDeterministic JD analysis to preserve scoring logic:\n" + htmlToText(analyzeJobDescription(question))
+      : "";
+
+    return [
+      {
+        role: "system",
+        content: [
+          "You are Prasun Kumar's portfolio assistant.",
+          "Answer only from the provided resume and portfolio context.",
+          "Do not invent employers, metrics, dates, certifications, degrees, or production claims.",
+          "If the user pasted a job description, explain fit using the deterministic JD analysis and resume context.",
+          "Be concise, recruiter-friendly, and specific. Use bullets when helpful.",
+          "If information is not in context, say it is not available in the public resume/portfolio."
+        ].join(" ")
+      },
+      {
+        role: "user",
+        content: [
+          "Resume and portfolio context:\n" + buildProfileContext(),
+          jdContext,
+          "\nRule-based fallback answer:\n" + deterministicAnswer,
+          "\nUser question or JD:\n" + question
+        ].join("\n")
+      }
+    ];
+  }
+
+  function generateLlmAnswer(question, statusElement, button) {
+    return loadLocalLLM(statusElement, button)
+      .then(function (engine) {
+        setStatus(statusElement, "Generating with free local LLM...");
+        return engine.chat.completions.create({
+          messages: buildLlmPrompt(question),
+          temperature: 0.35,
+          top_p: 0.9,
+          max_tokens: 420
+        });
+      })
+      .then(function (reply) {
+        var content = reply &&
+          reply.choices &&
+          reply.choices[0] &&
+          reply.choices[0].message &&
+          reply.choices[0].message.content;
+
+        setStatus(statusElement, "Free LLM mode active - Qwen2 0.5B in browser");
+        if (!content) {
+          return routeQuestion(question);
+        }
+
+        return "<p><strong>Free LLM answer:</strong></p><p>" +
+          escapeHtml(content).replace(/\n{2,}/g, "</p><p>").replace(/\n/g, "<br>") +
+          "</p>";
+      })
+      .catch(function () {
+        return routeQuestion(question) +
+          "<p><strong>Note:</strong> Free LLM mode could not run on this browser/device, so this answer used the instant resume matcher.</p>";
+      });
+  }
+
   function initAssistant() {
     var assistant = document.querySelector(".profile-assistant");
     if (!assistant) {
@@ -301,6 +474,8 @@
     var toggle = assistant.querySelector(".assistant-toggle");
     var panel = assistant.querySelector(".assistant-panel");
     var close = assistant.querySelector(".assistant-close");
+    var status = assistant.querySelector(".assistant-status");
+    var llmButton = assistant.querySelector(".assistant-llm-toggle");
     var messages = assistant.querySelector(".assistant-messages");
     var form = assistant.querySelector(".assistant-form");
     var input = assistant.querySelector("#assistant-input");
@@ -311,7 +486,7 @@
       toggle.setAttribute("aria-expanded", "true");
       assistant.classList.add("is-open");
       if (!messages.dataset.started) {
-        messages.appendChild(createMessage("bot", "<p><strong>Hi, I am Prasun's portfolio assistant.</strong> Ask me about his AI/ML experience, projects, skills, or paste a JD for a fit check.</p>"));
+        messages.appendChild(createMessage("bot", "<p><strong>Hi, I am Prasun's portfolio assistant.</strong> Ask me about his AI/ML experience, projects, skills, or paste a JD for a fit check. Use <strong>Enable Free LLM</strong> for an open-source browser model response when supported.</p>"));
         messages.dataset.started = "true";
       }
       input.focus();
@@ -331,9 +506,20 @@
       }
 
       messages.appendChild(createMessage("user", "<p>" + escapeHtml(cleanQuestion) + "</p>"));
-      messages.appendChild(createMessage("bot", routeQuestion(cleanQuestion)));
+      var botMessage = createMessage("bot loading", "<p>Thinking...</p>");
+      messages.appendChild(botMessage);
       messages.scrollTop = messages.scrollHeight;
       input.value = "";
+
+      if (llmState.enabled && llmState.engine) {
+        generateLlmAnswer(cleanQuestion, status, llmButton).then(function (answer) {
+          updateMessage(botMessage, answer, "bot");
+          messages.scrollTop = messages.scrollHeight;
+        });
+      } else {
+        updateMessage(botMessage, routeQuestion(cleanQuestion), "bot");
+        messages.scrollTop = messages.scrollHeight;
+      }
     }
 
     toggle.addEventListener("click", function () {
@@ -345,6 +531,23 @@
     });
 
     close.addEventListener("click", closeAssistant);
+
+    if (llmButton) {
+      llmButton.addEventListener("click", function () {
+        openAssistant();
+        messages.appendChild(createMessage("bot loading", "<p>Loading a free open-source LLM in your browser. First load may take a little while and depends on WebGPU support.</p>"));
+        messages.scrollTop = messages.scrollHeight;
+        loadLocalLLM(status, llmButton)
+          .then(function () {
+            messages.appendChild(createMessage("bot", "<p><strong>Free LLM mode is active.</strong> Ask a profile question or paste a JD and I will generate a grounded response using the local Qwen2 0.5B model plus Prasun's resume context.</p>"));
+            messages.scrollTop = messages.scrollHeight;
+          })
+          .catch(function () {
+            messages.appendChild(createMessage("bot", "<p><strong>Free LLM mode is unavailable here.</strong> This browser may not support WebGPU, or the model download failed. The instant resume assistant and JD matcher still work.</p>"));
+            messages.scrollTop = messages.scrollHeight;
+          });
+      });
+    }
 
     prompts.forEach(function (prompt) {
       prompt.addEventListener("click", function () {
