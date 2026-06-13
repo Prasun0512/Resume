@@ -73,24 +73,15 @@ body.cursor-idle::before {
   opacity: 0.38;
 }
 
-.cursor-trail {
+.cursor-trail-canvas {
   position: fixed;
-  z-index: 0;
   left: 0;
   top: 0;
-  width: 72px;
-  height: 2px;
-  border-radius: 999px;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
   pointer-events: none;
-  background: linear-gradient(90deg, transparent, rgba(21, 94, 117, 0.9), rgba(44, 230, 190, 0.98));
-  box-shadow:
-    0 0 10px rgba(44, 230, 190, 0.8),
-    0 0 22px rgba(21, 94, 117, 0.45);
-  opacity: var(--trail-opacity, 0);
-  transform:
-    translate3d(calc(var(--trail-x, 50vw) - 50%), calc(var(--trail-y, 50vh) - 50%), 0)
-    rotate(var(--trail-angle, 0deg));
-  transition: opacity 140ms ease;
+  mix-blend-mode: screen;
 }
 
 img {
@@ -109,7 +100,7 @@ a:hover {
 
 .site-shell {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
 }
@@ -506,7 +497,7 @@ li {
 
   body::before,
   body::after,
-  .cursor-trail {
+  .cursor-trail-canvas {
     display: none;
   }
 }
@@ -518,7 +509,7 @@ li {
 
   body::before,
   body::after,
-  .cursor-trail {
+  .cursor-trail-canvas {
     display: none;
   }
 }

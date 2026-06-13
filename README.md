@@ -15,6 +15,9 @@ machine-learning projects.
 - `_layouts/default.html` - site shell and header
 - `assets/css/style.scss` - custom portfolio styling
 - `Prasun_Kumar.pdf` - downloadable resume
+- `assets/js/ai-cursor.js` - interactive cursor trail effect for a premium AI portfolio experience
+
+Interactive cursor trail effect added for a premium AI portfolio experience.
 
 ## Local Preview
 
