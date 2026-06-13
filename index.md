@@ -5,7 +5,7 @@ title: Portfolio
 
 <section class="hero">
   <p class="eyebrow">Technical Lead - AI/ML Architect - GenAI Solution Architect</p>
-  <h1>Building production-grade AI systems for enterprise workflows.</h1>
+  <h1>8.5+ years building production-grade AI systems for enterprise workflows.</h1>
   <p class="lead">
     I lead AI and ML delivery across Generative AI, Retrieval-Augmented Generation,
     intelligent document processing, LLM fine-tuning, automation, and cloud-native
@@ -270,6 +270,22 @@ fallback strategies.
 ## Public GitHub Projects
 
 <div class="projects public-projects" markdown="1">
+
+<div class="project-card" markdown="1">
+### Enterprise RAG Quality Lab
+Runnable RAG quality project demonstrating PII redaction, chunking, lexical
+retrieval, retrieval metrics, confidence review routing, demo data, and tests.
+
+[View Repository](https://github.com/Prasun0512/enterprise-rag-quality-lab){: .btn }
+</div>
+
+<div class="project-card" markdown="1">
+### Enterprise AI/ML Case Studies
+Sanitized architecture notes and starter implementation patterns for major
+GenAI, RAG, document intelligence, agentic AI, NLP, and computer-vision work.
+
+[View Repository](https://github.com/Prasun0512/enterprise-ai-ml-case-studies){: .btn }
+</div>
 
 <div class="project-card" markdown="1">
 ### Restaurant Chatbot for Chefs
