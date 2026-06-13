@@ -362,12 +362,12 @@
 
     if (!isWebLLMSupported()) {
       llmState.failed = true;
-      setStatus(statusElement, "Free LLM needs HTTPS + WebGPU. Using instant mode.");
+      setStatus(statusElement, "LLM mode needs HTTPS + WebGPU. Using instant mode.");
       setLlmButton(button, "LLM unavailable", true);
       return Promise.reject(new Error("WebGPU is not available in this browser."));
     }
 
-    setStatus(statusElement, "Loading free browser LLM...");
+    setStatus(statusElement, "Loading browser LLM...");
     setLlmButton(button, "Loading model...", true);
 
     llmState.loadingPromise = import("https://esm.run/@mlc-ai/web-llm")
@@ -377,7 +377,7 @@
             var percent = progress && typeof progress.progress === "number"
               ? " " + Math.round(progress.progress * 100) + "%"
               : "";
-            var text = progress && progress.text ? progress.text : "Loading free browser LLM";
+            var text = progress && progress.text ? progress.text : "Loading browser LLM";
             setStatus(statusElement, text + percent);
           }
         });
@@ -386,15 +386,15 @@
         llmState.engine = engine;
         llmState.enabled = true;
         llmState.failed = false;
-        setStatus(statusElement, "Free LLM mode active - Qwen2 0.5B in browser");
-        setLlmButton(button, "Free LLM Active", true);
+        setStatus(statusElement, "LLM mode active - Qwen2 0.5B in browser");
+        setLlmButton(button, "LLM Active", true);
         return engine;
       })
       .catch(function (error) {
         llmState.failed = true;
         llmState.enabled = false;
         setStatus(statusElement, "LLM load failed. Using instant resume mode.");
-        setLlmButton(button, "Retry Free LLM", false);
+        setLlmButton(button, "Retry LLM", false);
         llmState.loadingPromise = null;
         throw error;
       });
@@ -450,18 +450,18 @@
           reply.choices[0].message &&
           reply.choices[0].message.content;
 
-        setStatus(statusElement, "Free LLM mode active - Qwen2 0.5B in browser");
+        setStatus(statusElement, "LLM mode active - Qwen2 0.5B in browser");
         if (!content) {
           return routeQuestion(question);
         }
 
-        return "<p><strong>Free LLM answer:</strong></p><p>" +
+        return "<p><strong>LLM answer:</strong></p><p>" +
           escapeHtml(content).replace(/\n{2,}/g, "</p><p>").replace(/\n/g, "<br>") +
           "</p>";
       })
       .catch(function () {
         return routeQuestion(question) +
-          "<p><strong>Note:</strong> Free LLM mode could not run on this browser/device, so this answer used the instant resume matcher.</p>";
+          "<p><strong>Note:</strong> LLM mode could not run on this browser/device, so this answer used the instant resume matcher.</p>";
       });
   }
 
@@ -486,7 +486,7 @@
       toggle.setAttribute("aria-expanded", "true");
       assistant.classList.add("is-open");
       if (!messages.dataset.started) {
-        messages.appendChild(createMessage("bot", "<p><strong>Hi, I am Prasun's portfolio assistant.</strong> Ask me about his AI/ML experience, projects, skills, or paste a JD for a fit check. Use <strong>Enable Free LLM</strong> for an open-source browser model response when supported.</p>"));
+        messages.appendChild(createMessage("bot", "<p><strong>Hi, I am Prasun's portfolio assistant.</strong> Ask me about his AI/ML experience, projects, skills, or paste a JD for a fit check. Use <strong>Enable LLM</strong> for an open-source browser model response when supported.</p>"));
         messages.dataset.started = "true";
       }
       input.focus();
@@ -539,11 +539,11 @@
         messages.scrollTop = messages.scrollHeight;
         loadLocalLLM(status, llmButton)
           .then(function () {
-            messages.appendChild(createMessage("bot", "<p><strong>Free LLM mode is active.</strong> Ask a profile question or paste a JD and I will generate a grounded response using the local Qwen2 0.5B model plus Prasun's resume context.</p>"));
+            messages.appendChild(createMessage("bot", "<p><strong>LLM mode is active.</strong> Ask a profile question or paste a JD and I will generate a grounded response using the local Qwen2 0.5B model plus Prasun's resume context.</p>"));
             messages.scrollTop = messages.scrollHeight;
           })
           .catch(function () {
-            messages.appendChild(createMessage("bot", "<p><strong>Free LLM mode is unavailable here.</strong> This browser may not support WebGPU, or the model download failed. The instant resume assistant and JD matcher still work.</p>"));
+            messages.appendChild(createMessage("bot", "<p><strong>LLM mode is unavailable here.</strong> This browser may not support WebGPU, or the model download failed. The instant resume assistant and JD matcher still work.</p>"));
             messages.scrollTop = messages.scrollHeight;
           });
       });
