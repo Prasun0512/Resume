@@ -1,25 +1,30 @@
-title: "Prasun Kumar — AI/ML Technical Lead"
+title: "Prasun Kumar"
+tagline: "AI/ML Technical Lead and GenAI Solution Architect"
+description: "Portfolio of Prasun Kumar, an AI/ML Technical Lead and GenAI Solution Architect with 8.5+ years of experience building enterprise AI, RAG, intelligent automation, and cloud-native ML platforms."
+
 url: "https://prasun0512.github.io"
-baseurl: "/Resume"     # important for proper absolute links
+baseurl: "/Resume"
 
 logo: /assets/img/logo.jpg
 
-description: |
-  <p align="center">
-  <a href="./Prasun_Kumar.pdf">Resume</a> |
-  <a href="https://www.linkedin.com/in/prasun-kumar-1708/">LinkedIn</a> |
-  <a href="https://github.com/Prasun0512">GitHub</a> |
-  <a href="https://www.youtube.com/@AIWizardry277">YouTube</a>
-  <br> ML & AI Lead with over %%YEARS%%+ years of experience. I have completed my <b>PGDM in ML and AI</b>
-  (<a href="https://www.credential.net/20453200-981b-4985-9ddf-2a44c5ee66cf#gs.cq8xsj">Credential</a>).
-  </p>
+author:
+  name: "Prasun Kumar"
+  location: "Pune, India"
+  email: "cehprasunsinha@gmail.com"
+
+links:
+  resume: "/Prasun_Kumar.pdf"
+  linkedin: "https://www.linkedin.com/in/prasun-kumar-1708/"
+  github: "https://github.com/Prasun0512"
+  youtube: "https://www.youtube.com/@AIWizardry277"
 
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Optional: improve SEO previews
 social:
+  name: "Prasun Kumar"
   links:
     - https://github.com/Prasun0512
     - https://www.linkedin.com/in/prasun-kumar-1708/
+    - https://www.youtube.com/@AIWizardry277
