@@ -4,12 +4,12 @@ title: Portfolio
 ---
 
 <section class="hero">
-  <p class="eyebrow">Technical Lead - AI/ML Architect - GenAI Solution Architect</p>
+  <p class="eyebrow">AI/ML Engineer - Technical Lead - GenAI & Agentic AI Solution Architect</p>
   <h1>8.5+ years building production-grade AI systems for enterprise workflows.</h1>
   <p class="lead">
-    I lead AI and ML delivery across Generative AI, Retrieval-Augmented Generation,
-    intelligent document processing, LLM fine-tuning, automation, and cloud-native
-    platforms on Azure and AWS.
+    I lead AI and ML delivery across Agentic AI, LLM applications, LangGraph,
+    LangChain, Retrieval-Augmented Generation, intelligent document processing,
+    OCR + LLM extraction, automation, and cloud-native platforms on Azure and AWS.
   </p>
   <div class="hero-actions">
     <a class="btn primary" href="{{ '/Prasun_Kumar.pdf' | relative_url }}">Download Resume</a>
@@ -39,8 +39,15 @@ title: Portfolio
 
 <div class="capability-card" markdown="1">
 ### GenAI and RAG Architecture
-Azure OpenAI, GPT-4, Azure AI Search, vector search, hybrid retrieval, chunking,
-semantic indexing, metadata filters, answer grounding, and retrieval evaluation.
+Azure OpenAI, GPT-4, Llama/open-source LLMs, Azure AI Search, vector search,
+hybrid retrieval, chunking, semantic indexing, metadata filters, answer
+grounding, and retrieval evaluation.
+</div>
+
+<div class="capability-card" markdown="1">
+### Agentic AI and Multi-Agent Workflows
+LangGraph, LangChain, tool routing, graph-style orchestration, memory-aware
+agents, approval gates, enterprise system actions, and audit-ready automation.
 </div>
 
 <div class="capability-card" markdown="1">
@@ -48,6 +55,12 @@ semantic indexing, metadata filters, answer grounding, and retrieval evaluation.
 Event-driven workflows with Azure Functions, Service Bus, Blob Storage,
 Microsoft Graph API, TrackOps integrations, retry handling, audit trails, and
 human-in-the-loop validation.
+</div>
+
+<div class="capability-card" markdown="1">
+### File and Document Intelligence
+OCR, Azure AI Document Intelligence, layout extraction, LLM-based information
+extraction, confidence scoring, PII/PHI masking, and validation workflows.
 </div>
 
 <div class="capability-card" markdown="1">
@@ -272,6 +285,38 @@ fallback strategies.
 <div class="projects public-projects" markdown="1">
 
 <div class="project-card" markdown="1">
+### Agentic AI LangGraph Workflows
+Portfolio-grade multi-agent workflow repo showing graph-style orchestration,
+tool routing, memory, approvals, and audit traces for enterprise automation.
+
+[View Repository](https://github.com/Prasun0512/agentic-ai-langgraph-workflows){: .btn }
+</div>
+
+<div class="project-card" markdown="1">
+### Document Intelligence LLM Pipeline
+OCR + LLM extraction pipeline with redaction, schema validation, confidence
+scoring, and review routing for file/document intelligence use cases.
+
+[View Repository](https://github.com/Prasun0512/document-intelligence-llm-pipeline){: .btn }
+</div>
+
+<div class="project-card" markdown="1">
+### Email-to-Case GenAI Automation
+Event-driven GenAI automation pattern for email ingestion, document extraction,
+case payload creation, retries, dead-letter handling, and human validation.
+
+[View Repository](https://github.com/Prasun0512/email-to-case-genai-automation){: .btn }
+</div>
+
+<div class="project-card" markdown="1">
+### AI Resume Job Matcher
+Resume/JD matching assistant with skill extraction, scoring, missing-skill
+analysis, and explainable match summaries.
+
+[View Repository](https://github.com/Prasun0512/ai-resume-job-matcher){: .btn }
+</div>
+
+<div class="project-card" markdown="1">
 ### Enterprise RAG Quality Lab
 Runnable RAG quality project demonstrating PII redaction, chunking, lexical
 retrieval, retrieval metrics, confidence review routing, demo data, and tests.
@@ -400,15 +445,19 @@ Jul 2017 - Oct 2019
 <p class="skill-cloud">
   <span>Azure OpenAI</span>
   <span>GPT-4</span>
+  <span>LangGraph</span>
+  <span>LangChain</span>
+  <span>Agentic AI</span>
   <span>RAG</span>
+  <span>Llama</span>
   <span>Azure AI Search</span>
   <span>Azure AI Document Intelligence</span>
+  <span>OCR + LLM Pipelines</span>
   <span>Vector Search</span>
   <span>AI Agents</span>
   <span>Python</span>
   <span>Databricks</span>
   <span>QLoRA</span>
-  <span>Llama</span>
   <span>Gemma</span>
   <span>Qwen</span>
   <span>MLflow</span>
