@@ -53,9 +53,9 @@ body::after {
 body::before {
   z-index: 0;
   background:
-    radial-gradient(circle 420px at var(--cursor-x) var(--cursor-y), rgba(31, 138, 112, 0.2), transparent 64%),
-    radial-gradient(circle 230px at var(--cursor-x) var(--cursor-y), rgba(21, 94, 117, 0.18), transparent 72%);
-  opacity: 0.95;
+    radial-gradient(circle 260px at var(--cursor-x) var(--cursor-y), rgba(31, 138, 112, 0.13), transparent 66%),
+    radial-gradient(circle 140px at var(--cursor-x) var(--cursor-y), rgba(21, 94, 117, 0.12), transparent 74%);
+  opacity: 0.78;
   transition: opacity 180ms ease;
 }
 
@@ -66,11 +66,31 @@ body::after {
     linear-gradient(90deg, rgba(21, 94, 117, 0.055) 1px, transparent 1px);
   background-size: 44px 44px;
   mask-image: radial-gradient(circle 520px at var(--cursor-x) var(--cursor-y), #000 0%, transparent 78%);
-  opacity: 0.55;
+  opacity: 0.42;
 }
 
 body.cursor-idle::before {
-  opacity: 0.55;
+  opacity: 0.38;
+}
+
+.cursor-trail {
+  position: fixed;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  width: 72px;
+  height: 2px;
+  border-radius: 999px;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(21, 94, 117, 0.9), rgba(44, 230, 190, 0.98));
+  box-shadow:
+    0 0 10px rgba(44, 230, 190, 0.8),
+    0 0 22px rgba(21, 94, 117, 0.45);
+  opacity: var(--trail-opacity, 0);
+  transform:
+    translate3d(calc(var(--trail-x, 50vw) - 50%), calc(var(--trail-y, 50vh) - 50%), 0)
+    rotate(var(--trail-angle, 0deg));
+  transition: opacity 140ms ease;
 }
 
 img {
@@ -471,7 +491,8 @@ li {
   }
 
   body::before,
-  body::after {
+  body::after,
+  .cursor-trail {
     display: none;
   }
 }
@@ -482,7 +503,8 @@ li {
   }
 
   body::before,
-  body::after {
+  body::after,
+  .cursor-trail {
     display: none;
   }
 }

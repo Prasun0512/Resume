@@ -313,6 +313,38 @@ portfolio decision support.
 [View Repository](https://github.com/Prasun0512/LendingClubCaseStudy){: .btn }
 </div>
 
+<div class="project-card" markdown="1">
+### Fraud Detection
+Machine-learning project for detecting fraudulent activity and surfacing risky
+patterns from transactional data.
+
+[View Repository](https://github.com/Prasun0512/fraud_detecton){: .btn }
+</div>
+
+<div class="project-card" markdown="1">
+### Advanced Regression - Housing Price Prediction
+Regularized regression project using ridge and lasso modeling to identify
+significant price drivers and estimate property values for investment decisions.
+
+[View Repository](https://github.com/Prasun0512/Assignment---Advanced-Regression){: .btn }
+</div>
+
+<div class="project-card" markdown="1">
+### Bike Sharing Demand Prediction
+Multiple linear regression project for predicting shared-bike demand and
+identifying business variables that influence usage after market disruption.
+
+[View Repository](https://github.com/Prasun0512/Linear-Regression-Assignment){: .btn }
+</div>
+
+<div class="project-card" markdown="1">
+### Linear Regression Practice Lab
+Structured regression practice repository covering simple linear regression,
+multiple linear regression, and industry relevance examples.
+
+[View Repository](https://github.com/Prasun0512/Linear-Regression){: .btn }
+</div>
+
 </div>
 
 ## Experience
