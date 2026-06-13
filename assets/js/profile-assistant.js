@@ -473,7 +473,7 @@
 
     var toggle = assistant.querySelector(".assistant-toggle");
     var panel = assistant.querySelector(".assistant-panel");
-    var close = assistant.querySelector(".assistant-close");
+    var closeButton = assistant.querySelector(".assistant-close");
     var status = assistant.querySelector(".assistant-status");
     var llmButton = assistant.querySelector(".assistant-llm-toggle");
     var messages = assistant.querySelector(".assistant-messages");
@@ -483,8 +483,8 @@
 
     function openAssistant() {
       panel.hidden = false;
-      toggle.setAttribute("aria-expanded", "true");
       assistant.classList.add("is-open");
+      toggle.setAttribute("aria-expanded", "true");
       if (!messages.dataset.started) {
         messages.appendChild(createMessage("bot", "<p><strong>Hi, I am Prasun's portfolio assistant.</strong> Ask me about his AI/ML experience, projects, skills, or paste a JD for a fit check. Use <strong>Enable LLM</strong> for an open-source browser model response when supported.</p>"));
         messages.dataset.started = "true";
@@ -492,11 +492,13 @@
       input.focus();
     }
 
-    function closeAssistant() {
+    function closeAssistant(shouldFocusToggle) {
+      assistant.classList.remove("is-open");
       panel.hidden = true;
       toggle.setAttribute("aria-expanded", "false");
-      assistant.classList.remove("is-open");
-      toggle.focus();
+      if (shouldFocusToggle !== false) {
+        toggle.focus();
+      }
     }
 
     function submitQuestion(question) {
@@ -523,14 +525,28 @@
     }
 
     toggle.addEventListener("click", function () {
-      if (panel.hidden) {
+      if (!assistant.classList.contains("is-open")) {
         openAssistant();
       } else {
-        closeAssistant();
+        closeAssistant(true);
       }
     });
 
-    close.addEventListener("click", closeAssistant);
+    closeButton.addEventListener("click", function () {
+      closeAssistant(true);
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && assistant.classList.contains("is-open")) {
+        closeAssistant(true);
+      }
+    });
+
+    document.addEventListener("click", function (event) {
+      if (assistant.classList.contains("is-open") && !assistant.contains(event.target)) {
+        closeAssistant(false);
+      }
+    });
 
     if (llmButton) {
       llmButton.addEventListener("click", function () {

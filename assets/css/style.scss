@@ -648,6 +648,11 @@ li {
   backdrop-filter: blur(18px);
 }
 
+.profile-assistant:not(.is-open) .assistant-panel,
+.assistant-panel[hidden] {
+  display: none !important;
+}
+
 .assistant-header {
   display: flex;
   align-items: flex-start;
