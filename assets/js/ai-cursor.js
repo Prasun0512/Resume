@@ -2,7 +2,7 @@
   "use strict";
 
   var DEFAULTS = {
-    color: "#2ce6be",
+    color: "#22d3ee",
     trailLength: 34,
     dotSize: 3.6,
     lineWidth: 2.2,

@@ -3,22 +3,41 @@ layout: default
 title: Portfolio
 ---
 
-<section class="hero">
-  <p class="eyebrow">AI/ML Engineer - Technical Lead - GenAI & Agentic AI Solution Architect</p>
-  <h1>8.5+ years building production-grade AI systems for enterprise workflows.</h1>
-  <p class="lead">
-    I lead AI and ML delivery across Agentic AI, LLM applications, LangGraph,
-    LangChain, Retrieval-Augmented Generation, intelligent document processing,
-    OCR + LLM extraction, automation, and cloud-native platforms on Azure and AWS.
-  </p>
-  <div class="hero-actions">
-    <a class="btn primary" href="{{ '/Prasun_Kumar.pdf' | relative_url }}">Download Resume</a>
-    <a class="btn" href="https://github.com/Prasun0512">GitHub</a>
-    <a class="btn" href="https://www.linkedin.com/in/prasun-kumar-1708/">LinkedIn</a>
+<section class="hero" id="about">
+  <div class="hero-copy">
+    <p class="eyebrow">Technical Lead - AI/ML Architect - GenAI Solution Architect</p>
+    <h1>Building enterprise <span>Agentic AI, LLM, and RAG systems</span> that move real workflows.</h1>
+    <p class="lead">
+      I lead AI and ML delivery across Agentic AI, LLM applications, LangGraph,
+      LangChain, Retrieval-Augmented Generation, intelligent document processing,
+      OCR + LLM extraction, automation, and cloud-native platforms on Azure and AWS.
+    </p>
+    <div class="hero-actions">
+      <a class="btn primary" href="{{ '/Prasun_Kumar.pdf' | relative_url }}">Download Resume</a>
+      <a class="btn" href="https://github.com/Prasun0512">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/prasun-kumar-1708/">LinkedIn</a>
+    </div>
   </div>
+
+  <aside class="hero-card" aria-label="Prasun Kumar profile summary">
+    <div class="avatar">
+      {% if site.logo %}
+        <img src="{{ site.logo | relative_url }}" alt="Prasun Kumar">
+      {% else %}
+        <span>PK</span>
+      {% endif %}
+    </div>
+    <h2>Prasun Kumar</h2>
+    <p>AI/ML Engineer | Technical Lead | GenAI & Agentic AI Solution Architect</p>
+    <div class="hero-card-meta">
+      <span>Pune, India</span>
+      <span>8.5+ years experience</span>
+      <span>Azure OpenAI - LangGraph - RAG - Python</span>
+    </div>
+  </aside>
 </section>
 
-<section class="metric-grid" aria-label="Career highlights">
+<section class="metric-grid" id="impact" aria-label="Career highlights">
   <article>
     <strong>8.5+ years</strong>
     <span>AI, ML, automation, and enterprise engineering experience</span>
@@ -77,7 +96,7 @@ engineering standards, mentoring, and delivery ownership across AI teams.
 
 </div>
 
-## Featured Enterprise AI Work
+<h2 id="featured-enterprise-ai-work">Featured Enterprise AI Work</h2>
 
 <p class="section-note">
   Sanitized architecture notes and starter implementation patterns for the
@@ -414,7 +433,7 @@ multiple linear regression, and industry relevance examples.
 
 </div>
 
-## Experience
+<h2 id="experience">Experience</h2>
 
 <div class="timeline" markdown="1">
 
@@ -425,7 +444,7 @@ Aug 2024 - Present
 
 <div markdown="1">
 **Harbinger Group** - Senior Software Engineer<br>
-Apr 2021 - Mar 2025
+Apr 2021 - Jul 2024
 </div>
 
 <div markdown="1">
@@ -471,7 +490,7 @@ Jul 2017 - Oct 2019
   <span>Microsoft Graph API</span>
 </p>
 
-## Contact
+<h2 id="contact">Contact</h2>
 
 I am based in Pune, India and open to Technical Lead, AI/ML Architect, and
 Generative AI Solution Architect roles.
