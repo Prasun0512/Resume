@@ -153,6 +153,114 @@ system updates.
 
 </div>
 
+## Additional ML/AI Project Portfolio
+
+<div class="projects" markdown="1">
+
+<div class="project-card lab" markdown="1">
+### Behavior Scoring Engine
+Multi-label email classification pipeline for 80+ behavioral signals using
+SentenceTransformers, per-behavior classifiers, ANN retrieval, class weights,
+threshold calibration, and LLM fallback for low-confidence predictions.
+
+<p class="project-meta">
+  <span>NLP</span>
+  <span>LLM Evaluation</span>
+  <span>Classification</span>
+</p>
+</div>
+
+<div class="project-card lab" markdown="1">
+### Medical Insurance Claims Automation
+Document AI pipeline for extracting claim information from PDFs, scanned
+documents, and images while applying PHI/PII masking before downstream LLM
+processing.
+
+<p class="project-meta">
+  <span>NER</span>
+  <span>PHI Masking</span>
+  <span>Document AI</span>
+</p>
+</div>
+
+<div class="project-card lab" markdown="1">
+### JD-Resume Parser and ATS Matcher
+Resume-to-job matching system that extracts skills, tools, roles, and
+experience, normalizes synonyms, and combines keyword matching with embedding
+similarity for explainable scoring.
+
+<p class="project-meta">
+  <span>Embeddings</span>
+  <span>Search</span>
+  <span>ATS</span>
+</p>
+</div>
+
+<div class="project-card lab" markdown="1">
+### Explainable Behavior and Toxicity Highlighting
+Auditable NLP workflow that highlights evidence spans and sentence-level signals
+behind behavior and toxicity predictions for faster human review and governance.
+
+<p class="project-meta">
+  <span>Explainable AI</span>
+  <span>NLP</span>
+  <span>Governance</span>
+</p>
+</div>
+
+<div class="project-card lab" markdown="1">
+### Smart Consultation Recording Trigger
+Computer vision trigger that detects stethoscope presence using object detection
+and applies smoothing, confidence thresholds, and stable on/off logic to reduce
+false recording events.
+
+<p class="project-meta">
+  <span>YOLO</span>
+  <span>Computer Vision</span>
+  <span>Automation</span>
+</p>
+</div>
+
+<div class="project-card lab" markdown="1">
+### Face Search and Attribute Analytics
+DeepFace-based search workflow for finding all images of a person in a large
+dataset, extracting attributes, and exporting matched outputs for review.
+
+<p class="project-meta">
+  <span>DeepFace</span>
+  <span>Similarity Search</span>
+  <span>Analytics</span>
+</p>
+</div>
+
+<div class="project-card lab" markdown="1">
+### AI Coach for Learning Pathways
+Personalized learning assistant that combines learner signals, content
+recommendations, and grounded RAG Q&A to help users identify gaps and choose
+next-best learning content.
+
+<p class="project-meta">
+  <span>RAG</span>
+  <span>Recommendation</span>
+  <span>EdTech</span>
+</p>
+</div>
+
+<div class="project-card lab" markdown="1">
+### Prompt and Retrieval Quality Evaluation Suite
+Evaluation practice for comparing few-shot prompts, checklist prompts, retrieval
+settings, latency, answer relevance, hallucination risk, and confidence-based
+fallback strategies.
+
+<p class="project-meta">
+  <span>LLMOps</span>
+  <span>Evaluation</span>
+  <span>RAG Quality</span>
+</p>
+</div>
+
+</div>
+
 ## Public GitHub Projects
 
 <div class="projects public-projects" markdown="1">
