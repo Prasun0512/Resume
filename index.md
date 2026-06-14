@@ -467,7 +467,7 @@ production-ready AI architecture.
 
 <figure class="architecture-diagram">
   <img
-    src="{{ '/assets/img/enterprise-ai-architecture-flow.png' | relative_url }}"
+    src="https://raw.githubusercontent.com/Prasun0512/Resume/master/assets/img/enterprise-ai-architecture-flow.png"
     alt="Enterprise AI architecture flow from workflow intake to queue processing, AI workflow, validation gates, business update or human review, and audit monitoring"
   >
 </figure>
