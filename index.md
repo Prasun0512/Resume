@@ -299,139 +299,148 @@ fallback strategies.
 
 </div>
 
-## Public GitHub Projects
+## Public AI Architecture Repositories
 
 <div class="projects public-projects" markdown="1">
 
 <div class="project-card" markdown="1">
+### Enterprise AI/ML Case Studies
+Sanitized architecture notes and starter implementation patterns for GenAI,
+RAG, document intelligence, agentic AI, NLP, and computer-vision work.
+
+[View Repository](https://github.com/Prasun0512/enterprise-ai-ml-case-studies){: .btn }
+</div>
+
+<div class="project-card" markdown="1">
 ### Agentic AI LangGraph Workflows
-Portfolio-grade multi-agent workflow repo showing graph-style orchestration,
-tool routing, memory, approvals, and audit traces for enterprise automation.
+Multi-agent workflow system with planner, research, retrieval, validation,
+execution, approval gates, retry logic, and audit traces.
 
 [View Repository](https://github.com/Prasun0512/agentic-ai-langgraph-workflows){: .btn }
 </div>
 
 <div class="project-card" markdown="1">
+### Enterprise RAG Quality Lab
+RAG quality project demonstrating redaction, chunking, retrieval metrics,
+confidence routing, grounded answer checks, demo data, and tests.
+
+[View Repository](https://github.com/Prasun0512/enterprise-rag-quality-lab){: .btn }
+</div>
+
+<div class="project-card" markdown="1">
 ### Document Intelligence LLM Pipeline
-OCR + LLM extraction pipeline with redaction, schema validation, confidence
-scoring, and review routing for file/document intelligence use cases.
+OCR + LLM extraction pipeline with PII redaction, schema validation, confidence
+scoring, exception routing, and human review.
 
 [View Repository](https://github.com/Prasun0512/document-intelligence-llm-pipeline){: .btn }
 </div>
 
 <div class="project-card" markdown="1">
 ### Email-to-Case GenAI Automation
-Event-driven GenAI automation pattern for email ingestion, document extraction,
-case payload creation, retries, dead-letter handling, and human validation.
+Event-driven GenAI automation pattern for email ingestion, attachment handling,
+case payload creation, retries, dead-letter handling, and validation.
 
 [View Repository](https://github.com/Prasun0512/email-to-case-genai-automation){: .btn }
 </div>
 
 <div class="project-card" markdown="1">
 ### AI Resume Job Matcher
-Resume/JD matching assistant with skill extraction, scoring, missing-skill
-analysis, and explainable match summaries.
+Resume/JD matching assistant with skill extraction, semantic scoring, missing
+skill analysis, and explainable suitability summaries.
 
 [View Repository](https://github.com/Prasun0512/ai-resume-job-matcher){: .btn }
 </div>
 
 <div class="project-card" markdown="1">
-### Enterprise RAG Quality Lab
-Runnable RAG quality project demonstrating PII redaction, chunking, lexical
-retrieval, retrieval metrics, confidence review routing, demo data, and tests.
+### Enterprise AI Architecture Showcase
+Architecture decision records, HLDs, LLDs, sequence diagrams, deployment
+patterns, security controls, and multi-tenant AI reference architectures.
 
-[View Repository](https://github.com/Prasun0512/enterprise-rag-quality-lab){: .btn }
+[View Repository](https://github.com/Prasun0512/enterprise-ai-architecture-showcase){: .btn }
 </div>
 
 <div class="project-card" markdown="1">
-### Enterprise AI/ML Case Studies
-Sanitized architecture notes and starter implementation patterns for major
-GenAI, RAG, document intelligence, agentic AI, NLP, and computer-vision work.
+### Enterprise LLM Evaluation Framework
+Evaluation framework for faithfulness, groundedness, recall, relevance,
+regression gates, and release-readiness checks for LLM and RAG systems.
 
-[View Repository](https://github.com/Prasun0512/enterprise-ai-ml-case-studies){: .btn }
+[View Repository](https://github.com/Prasun0512/enterprise-llm-evaluation-framework){: .btn }
 </div>
 
 <div class="project-card" markdown="1">
-### Restaurant Chatbot for Chefs
-Recipe assistance and document Q&A for chefs and food enthusiasts using BERT
-embeddings, Elasticsearch, AllenNLP, AWS Lex, and AWS Comprehend.
+### Enterprise AI Platform Engineering
+Model gateway, prompt registry, guardrails, caching, routing, evaluation hooks,
+and cost-control patterns for platform-style AI delivery.
+
+[View Repository](https://github.com/Prasun0512/enterprise-ai-platform-engineering){: .btn }
+</div>
+
+<div class="project-card" markdown="1">
+### AI Reliability Engineering
+Retry, circuit breaker, fallback, poison queue, runbook, and postmortem
+patterns for operating AI systems reliably.
+
+[View Repository](https://github.com/Prasun0512/ai-reliability-engineering){: .btn }
+</div>
+
+<div class="project-card" markdown="1">
+### Production AI Operations
+Deployment, rollback, canary, embedding refresh, index rebuild, monitoring,
+alerting, and cost-management playbooks.
+
+[View Repository](https://github.com/Prasun0512/production-ai-operations){: .btn }
+</div>
+
+<div class="project-card" markdown="1">
+### Multi-Tenant AI Platform
+Tenant isolation, RBAC, feature flags, model/vector routing, usage metering,
+and cost tracking for SaaS-style AI platforms.
+
+[View Repository](https://github.com/Prasun0512/multi-tenant-ai-platform){: .btn }
+</div>
+
+<div class="project-card" markdown="1">
+### Enterprise Integration Patterns
+Webhooks, REST integrations, async messaging, retries, idempotency, DLQs, and
+audit logging for enterprise workflow automation.
+
+[View Repository](https://github.com/Prasun0512/enterprise-integration-patterns){: .btn }
+</div>
+
+<div class="project-card" markdown="1">
+### AI Technical Lead Playbook
+AI delivery lifecycle, design reviews, risk management, code review standards,
+and architecture review practices for AI teams.
+
+[View Repository](https://github.com/Prasun0512/ai-technical-lead-playbook){: .btn }
+</div>
+
+<div class="project-card" markdown="1">
+### Engineering Leadership
+Architecture reviews, technical decisions, mentoring, delivery planning,
+stakeholder communication, and team-scaling practices.
+
+[View Repository](https://github.com/Prasun0512/engineering-leadership){: .btn }
+</div>
+
+<div class="project-card" markdown="1">
+### Restaurant AI Chatbot
+Legacy NLP assistant for recipe and food-domain Q&A. This repo is kept as a
+foundational AI project; rename recommended to `restaurant-ai-chatbot`.
 
 [View Repository](https://github.com/Prasun0512/ResturantChatbot){: .btn }
 </div>
 
-<div class="project-card" markdown="1">
-### Employee Emotion Detection
-Computer vision and NLP pipeline for emotion classification, employee wellness
-signals, and actionable reporting.
-
-[View Repository](https://github.com/Prasun0512/Employee_Emotion_Detection){: .btn }
 </div>
 
-<div class="project-card" markdown="1">
-### Melanoma Detection
-Dermoscopic image classification with TensorFlow and Keras, focused on early
-melanoma detection.
+## Foundational ML Projects
 
-[View Repository](https://github.com/Prasun0512/Melanoma-Detection-Assignment){: .btn }
-</div>
-
-<div class="project-card" markdown="1">
-### Lung Cancer Detection
-Image preprocessing and deep learning workflow for lung cancer detection from
-medical imaging datasets.
-
-[View Repository](https://github.com/Prasun0512/-Lung-Cancer-Detection/){: .btn }
-</div>
-
-<div class="project-card" markdown="1">
-### Smart-TV Gesture Recognition
-Deep learning project for hand-gesture classification and remote-free Smart TV
-control.
-
-[View Repository](https://github.com/Prasun0512/Neural-Networks-Project---Gesture-Recognition){: .btn }
-</div>
-
-<div class="project-card" markdown="1">
-### Risky Loan Applicant Predictor
-EDA, feature engineering, and ML modeling for credit-risk analysis and loan
-portfolio decision support.
-
-[View Repository](https://github.com/Prasun0512/LendingClubCaseStudy){: .btn }
-</div>
-
-<div class="project-card" markdown="1">
-### Fraud Detection
-Machine-learning project for detecting fraudulent activity and surfacing risky
-patterns from transactional data.
-
-[View Repository](https://github.com/Prasun0512/fraud_detecton){: .btn }
-</div>
-
-<div class="project-card" markdown="1">
-### Advanced Regression - Housing Price Prediction
-Regularized regression project using ridge and lasso modeling to identify
-significant price drivers and estimate property values for investment decisions.
-
-[View Repository](https://github.com/Prasun0512/Assignment---Advanced-Regression){: .btn }
-</div>
-
-<div class="project-card" markdown="1">
-### Bike Sharing Demand Prediction
-Multiple linear regression project for predicting shared-bike demand and
-identifying business variables that influence usage after market disruption.
-
-[View Repository](https://github.com/Prasun0512/Linear-Regression-Assignment){: .btn }
-</div>
-
-<div class="project-card" markdown="1">
-### Linear Regression Practice Lab
-Structured regression practice repository covering simple linear regression,
-multiple linear regression, and industry relevance examples.
-
-[View Repository](https://github.com/Prasun0512/Linear-Regression){: .btn }
-</div>
-
-</div>
+Earlier machine-learning and computer-vision work includes emotion detection,
+medical image classification experiments, gesture recognition, credit-risk
+analysis, fraud detection, and regression modeling. These are now treated as
+foundational ML projects rather than the headline portfolio because the current
+GitHub profile is focused on enterprise GenAI, Agentic AI, RAG, LLMOps, and
+production-ready AI architecture.
 
 <h2 id="experience">Experience</h2>
 
