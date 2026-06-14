@@ -97,6 +97,35 @@ engineering standards, mentoring, and delivery ownership across AI teams.
 
 </div>
 
+<section class="skill-filter-panel" aria-labelledby="skill-filter-heading">
+  <div>
+    <p class="eyebrow">Project Explorer</p>
+    <h2 id="skill-filter-heading">Filter Projects by Skill</h2>
+    <p class="section-note">
+      Click a skill to surface the most relevant enterprise AI, GenAI, RAG,
+      MLOps, automation, and foundational ML projects.
+    </p>
+  </div>
+
+  <div class="filter-buttons" role="list" aria-label="Project skill filters">
+    <button type="button" class="active" data-project-filter="all">All</button>
+    <button type="button" data-project-filter="genai|generative ai|azure openai|gpt|llm">GenAI / LLM</button>
+    <button type="button" data-project-filter="agentic|agent|langgraph|multi-agent|tool routing">Agentic AI</button>
+    <button type="button" data-project-filter="rag|retrieval|vector|embedding|azure ai search|citation">RAG</button>
+    <button type="button" data-project-filter="document|ocr|extraction|pii|phi|azure ai document intelligence">Document AI</button>
+    <button type="button" data-project-filter="automation|event-driven|service bus|azure functions|workflow|case">Automation</button>
+    <button type="button" data-project-filter="mlops|llmops|mlflow|evaluation|monitoring|registry">MLOps / LLMOps</button>
+    <button type="button" data-project-filter="nlp|classification|behavior|sentence transformers|bert|toxicity">NLP</button>
+    <button type="button" data-project-filter="computer vision|deepface|yolo|image|gesture|face">Computer Vision</button>
+    <button type="button" data-project-filter="leadership|architecture review|technical lead|mentoring|stakeholder">Leadership</button>
+  </div>
+
+  <p class="filter-status" aria-live="polite">
+    Showing <strong data-filter-count>all</strong> matching projects.
+  </p>
+  <p class="filter-empty" hidden>No projects matched this skill yet.</p>
+</section>
+
 <h2 id="featured-enterprise-ai-work">Featured Enterprise AI Work</h2>
 
 <p class="section-note">
