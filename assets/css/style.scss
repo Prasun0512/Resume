@@ -270,6 +270,15 @@ h2[id] {
   text-transform: uppercase;
 }
 
+.hero-name {
+  margin: 0 0 8px;
+  color: #f8fafc;
+  font-size: 1.05rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .hero h1 {
   max-width: 820px;
   margin: 0;
@@ -595,12 +604,31 @@ li {
   color: var(--muted);
 }
 
+.filter-empty[hidden] {
+  display: none !important;
+}
+
 .filter-status strong {
   color: var(--primary);
 }
 
 .project-card.is-hidden {
   display: none;
+}
+
+.type-badge {
+  display: inline-flex;
+  width: fit-content;
+  margin: 2px 0 12px;
+  padding: 5px 9px;
+  border: 1px solid rgba(34, 211, 238, 0.44);
+  border-radius: 999px;
+  background: rgba(34, 211, 238, 0.12);
+  color: var(--primary);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .architecture-diagram {
@@ -620,6 +648,46 @@ li {
   height: auto;
 }
 
+.architecture-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 18px 0 22px;
+}
+
+.architecture-card {
+  padding: 22px;
+  border: 1px solid rgba(125, 211, 252, 0.24);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.architecture-card h3 {
+  margin-top: 0;
+}
+
+.mini-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.mini-flow span {
+  padding: 6px 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #e2e8f0;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.mini-flow b {
+  color: var(--primary);
+}
+
 .timeline {
   display: grid;
   gap: 16px;
@@ -636,6 +704,65 @@ li {
 
 .timeline strong {
   color: #ffffff;
+}
+
+.timeline ul {
+  margin: 12px 0 0;
+  padding-left: 20px;
+}
+
+.timeline li {
+  margin: 6px 0;
+  color: var(--muted);
+}
+
+.award-grid,
+.stack-grid {
+  display: grid;
+  gap: 14px;
+  margin: 18px 0 22px;
+}
+
+.award-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.award-grid span,
+.stack-grid > div,
+.cert-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.075);
+  box-shadow: 0 20px 58px rgba(0, 0, 0, 0.16);
+}
+
+.award-grid span {
+  display: flex;
+  align-items: center;
+  min-height: 74px;
+  padding: 16px;
+  color: #f8fafc;
+  font-weight: 900;
+}
+
+.cert-card {
+  padding: 24px;
+}
+
+.cert-card h3 {
+  margin-top: 0;
+}
+
+.stack-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.stack-grid > div {
+  padding: 20px;
+}
+
+.stack-grid h3 {
+  margin-top: 0;
 }
 
 .skill-cloud {
@@ -963,6 +1090,15 @@ li {
 
   .architecture-diagram img {
     min-width: 720px;
+  }
+
+  .architecture-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .award-grid,
+  .stack-grid {
+    grid-template-columns: 1fr;
   }
 }
 

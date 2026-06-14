@@ -486,7 +486,7 @@
       assistant.classList.add("is-open");
       toggle.setAttribute("aria-expanded", "true");
       if (!messages.dataset.started) {
-        messages.appendChild(createMessage("bot", "<p><strong>Hi, I am Prasun's portfolio assistant.</strong> Ask me about his AI/ML experience, projects, skills, or paste a JD for a fit check. Use <strong>Enable LLM</strong> for an open-source browser model response when supported.</p>"));
+        messages.appendChild(createMessage("bot", "<p><strong>Hi, I am Prasun's portfolio assistant demo.</strong> Ask about AI/ML experience, projects, skills, or paste a JD for a fit check. Instant mode is always available; optional LLM mode runs only when the browser supports it.</p>"));
         messages.dataset.started = "true";
       }
       input.focus();

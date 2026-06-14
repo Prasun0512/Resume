@@ -168,6 +168,15 @@ def build() -> None:
             "Built early foundation in production support, stakeholder communication, incident analysis, and disciplined engineering execution.",
         ],
     )
+    add_role(
+        doc,
+        "Master Level Intern",
+        "Symantec Software India Pvt Ltd",
+        "Jan 2017 - Jul 2017",
+        [
+            "Worked on enterprise application support and automation foundations before moving into full-time engineering.",
+        ],
+    )
 
     add_heading(doc, "Selected AI Architecture Projects")
     projects = [

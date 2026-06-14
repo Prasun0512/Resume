@@ -5,12 +5,12 @@ title: Portfolio
 
 <section class="hero" id="about">
   <div class="hero-copy">
+    <p class="hero-name">Prasun Kumar</p>
     <p class="eyebrow">AI/ML Technical Lead - GenAI Solution Architect - Agentic AI & RAG Specialist</p>
     <h1>Designing enterprise <span>AI, Agentic AI, and RAG systems</span> that transform operations.</h1>
     <p class="lead">
-      I lead AI and ML delivery across Agentic AI, LLM applications, LangGraph,
-      LangChain, Retrieval-Augmented Generation, intelligent document processing,
-      OCR + LLM extraction, automation, and cloud-native platforms on Azure and AWS.
+      I design production-minded GenAI, RAG, document intelligence, and agentic
+      AI systems for enterprise workflows.
     </p>
     <div class="hero-actions">
       <a class="btn primary" href="{{ '/Prasun_Kumar.pdf' | relative_url }}">Download Resume</a>
@@ -40,16 +40,16 @@ title: Portfolio
 
 <section class="metric-grid" id="impact" aria-label="Career highlights">
   <article>
-    <strong>8.5+ years</strong>
-    <span>AI, ML, automation, and enterprise engineering experience</span>
+    <strong>8.5+ Years</strong>
+    <span>AI/ML + enterprise engineering</span>
   </article>
   <article>
     <strong>60%+</strong>
-    <span>improvement in document extraction accuracy on GenAI automation</span>
+    <span>extraction accuracy improvement</span>
   </article>
   <article>
-    <strong>77 TB</strong>
-    <span>storage optimized through model lifecycle cleanup and governance</span>
+    <strong>77 TB+</strong>
+    <span>storage optimization impact</span>
   </article>
 </section>
 
@@ -149,6 +149,16 @@ Blob Storage, MySQL, and TrackOps APIs.
 case-processing effort.
 
 **Source:** Client/internal implementation. Sanitized architecture summary only.
+
+<p class="project-meta">
+  <span>Azure OpenAI</span>
+  <span>Azure Functions</span>
+  <span>Service Bus</span>
+  <span>OCR</span>
+  <span>Human Review</span>
+</p>
+
+[Related Public Demo](https://github.com/Prasun0512/email-to-case-genai-automation){: .btn }
 </div>
 
 <div class="project-card featured" markdown="1">
@@ -163,6 +173,15 @@ Search, vector indexing, metadata enrichment, and hybrid retrieval.
 optimization, and hallucination reduction practices.
 
 **Source:** Enterprise architecture summary. Source code is not public.
+
+<p class="project-meta">
+  <span>RAG</span>
+  <span>Azure AI Search</span>
+  <span>Hybrid Retrieval</span>
+  <span>Evaluation</span>
+</p>
+
+[Related Public Demo](https://github.com/Prasun0512/enterprise-rag-quality-lab){: .btn }
 </div>
 
 <div class="project-card featured" markdown="1">
@@ -177,20 +196,58 @@ dynamic multi-adapter serving, and Databricks-based evaluation dashboards.
 management and cleanup processes.
 
 **Source:** Private/internal implementation. Sanitized summary only.
+
+<p class="project-meta">
+  <span>NLP</span>
+  <span>LLMOps</span>
+  <span>Databricks</span>
+  <span>QLoRA</span>
+</p>
 </div>
 
 <div class="project-card featured" markdown="1">
-### AI-Powered Learning Content Generator
-**Role:** Technical Lead - Generative AI for Learning
+### Multi-Agent Workflow Automation Platform
+**Role:** Technical Lead - AI Agents and Orchestration
 
-Built a GenAI platform that creates instructional content, quizzes, and
-assessments tailored to learning objectives. Used RAG pipelines and
-human-in-the-loop quality review to keep generated learning content grounded.
+Developed multi-agent orchestration patterns for HR, CRM, and support workflows,
+including dynamic tool selection, memory retrieval, reasoning, human approval,
+and enterprise system updates.
 
-**Impact:** Reduced course-development time and enabled scalable personalized
-learning content delivery.
+**Impact:** Reduced manual intervention across multi-step operational workflows.
 
-**Source:** Client/internal implementation. Sanitized summary only.
+**Source:** Public version contains sanitized runnable demo patterns.
+
+<p class="project-meta">
+  <span>LangGraph</span>
+  <span>AI Agents</span>
+  <span>Approval Gates</span>
+  <span>Audit Trace</span>
+</p>
+
+[Related Public Demo](https://github.com/Prasun0512/agentic-ai-langgraph-workflows){: .btn }
+</div>
+
+<div class="project-card featured" markdown="1">
+### Document Intelligence / Medical Claims Automation
+**Role:** Technical Lead - OCR + LLM Extraction
+
+Built document AI pipeline patterns for extracting claim information from PDFs,
+scanned documents, and images while applying PHI/PII masking before downstream
+LLM processing.
+
+**Impact:** Improved consistency and reduced manual review effort for
+document-heavy workflows.
+
+**Source:** Private/internal implementation. Public version contains sanitized architecture summary only.
+
+<p class="project-meta">
+  <span>Document AI</span>
+  <span>OCR</span>
+  <span>PII/PHI Masking</span>
+  <span>Validation</span>
+</p>
+
+[Related Public Demo](https://github.com/Prasun0512/document-intelligence-llm-pipeline){: .btn }
 </div>
 
 <div class="project-card featured" markdown="1">
@@ -203,32 +260,15 @@ handoffs. The demo uses dependency-light local tracking while mapping cleanly to
 MLflow Tracking and Model Registry patterns.
 
 **Source:** Public runnable demo repository.
-</div>
 
-<div class="project-card featured" markdown="1">
-### Virtual HR Assistant and Candidate Screening Agent
-**Role:** Technical Lead - Conversational AI and NLP
+<p class="project-meta">
+  <span>MLflow</span>
+  <span>MLOps</span>
+  <span>Evaluation Gates</span>
+  <span>Monitoring</span>
+</p>
 
-Designed an AI assistant for HR inquiries, routine task automation, and
-candidate screening. Integrated LLMs with enterprise HR systems and used NLP
-workflows to extract candidate signals from resumes and assessments.
-
-**Impact:** Improved HR response consistency and candidate experience.
-
-**Source:** Client/internal implementation. Sanitized summary only.
-</div>
-
-<div class="project-card featured" markdown="1">
-### Multi-Agent Workflow Automation Platform
-**Role:** Technical Lead - AI Agents and Orchestration
-
-Developed multi-agent orchestration patterns for HR, CRM, and support workflows,
-including dynamic tool selection, memory retrieval, reasoning, and enterprise
-system updates.
-
-**Impact:** Reduced manual intervention across multi-step operational workflows.
-
-**Source:** Internal architecture summary. Source code is not public.
+[Related Public Demo](https://github.com/Prasun0512/mlflow-mlops-ai-platform){: .btn }
 </div>
 
 </div>
@@ -236,6 +276,18 @@ system updates.
 ## Additional ML/AI Project Portfolio
 
 <div class="projects" markdown="1">
+
+<div class="project-card lab" markdown="1">
+### AI-Powered Learning Content and HR Assistants
+GenAI assistant patterns for learning content generation, HR inquiries, routine
+task automation, and candidate screening with grounded review workflows.
+
+<p class="project-meta">
+  <span>GenAI</span>
+  <span>Conversational AI</span>
+  <span>RAG</span>
+</p>
+</div>
 
 <div class="project-card lab" markdown="1">
 ### Behavior Scoring Engine
@@ -473,14 +525,6 @@ stakeholder communication, and team-scaling practices.
 [View Repository](https://github.com/Prasun0512/engineering-leadership){: .btn }
 </div>
 
-<div class="project-card" markdown="1">
-### Restaurant AI Chatbot
-Legacy NLP assistant for recipe and food-domain Q&A. This repo is kept as a
-foundational AI project; rename recommended to `restaurant-ai-chatbot`.
-
-[View Repository](https://github.com/Prasun0512/ResturantChatbot){: .btn }
-</div>
-
 </div>
 
 ## Foundational ML Projects
@@ -492,6 +536,49 @@ foundational ML projects rather than the headline portfolio because the current
 GitHub profile is focused on enterprise GenAI, Agentic AI, RAG, LLMOps, and
 production-ready AI architecture.
 
+<div class="projects foundational-projects" markdown="1">
+
+<div class="project-card lab" markdown="1">
+### Restaurant AI Chatbot
+Legacy NLP assistant for recipe and food-domain Q&A. Kept as a foundational AI
+project; rename recommended to `restaurant-ai-chatbot`.
+
+<p class="project-meta">
+  <span>NLP</span>
+  <span>Search</span>
+  <span>AWS Lex</span>
+</p>
+
+[View Repository](https://github.com/Prasun0512/ResturantChatbot){: .btn }
+</div>
+
+<div class="project-card lab" markdown="1">
+### Regression, Fraud, and Credit-Risk Labs
+Foundational ML work across regression modeling, fraud detection,
+LendingClub-style risk analysis, feature engineering, and evaluation.
+
+<p class="project-meta">
+  <span>Regression</span>
+  <span>Fraud Detection</span>
+  <span>Risk Modeling</span>
+</p>
+</div>
+
+<div class="project-card lab" markdown="1">
+### Computer Vision Foundations
+Foundational projects across gesture recognition, emotion detection, melanoma
+experiments, and lung-imaging experiments with non-clinical learning-project
+positioning.
+
+<p class="project-meta">
+  <span>Computer Vision</span>
+  <span>Deep Learning</span>
+  <span>Image Classification</span>
+</p>
+</div>
+
+</div>
+
 ## Architecture Showcase
 
 <figure class="architecture-diagram">
@@ -500,6 +587,28 @@ production-ready AI architecture.
     alt="Enterprise AI architecture flow from workflow intake to queue processing, AI workflow, validation gates, business update or human review, and audit monitoring"
   >
 </figure>
+
+<div class="architecture-cards" markdown="1">
+
+<div class="architecture-card" markdown="1">
+### Enterprise RAG Pipeline
+<div class="mini-flow">
+  <span>Docs</span><b>-&gt;</b><span>Chunking</span><b>-&gt;</b><span>Embeddings</span><b>-&gt;</b><span>Hybrid Search</span><b>-&gt;</b><span>Grounded Answer</span>
+</div>
+Uses metadata filtering, citation coverage, confidence thresholds, answer
+grounding, and evaluation metrics to reduce hallucination risk.
+</div>
+
+<div class="architecture-card" markdown="1">
+### Agentic AI Workflow
+<div class="mini-flow">
+  <span>Planner</span><b>-&gt;</b><span>Retriever</span><b>-&gt;</b><span>Validator</span><b>-&gt;</b><span>Approval Gate</span><b>-&gt;</b><span>Executor</span>
+</div>
+Shows tool routing, memory, retry handling, human-in-the-loop review,
+observability, and audit-ready workflow state.
+</div>
+
+</div>
 
 My architecture work emphasizes event-driven design, idempotency, DLQs, human
 approval gates, retrieval quality, AI safety controls, observability, and
@@ -516,25 +625,35 @@ stakeholder communication, and production-readiness gates.
 Recognized consistently between 2017 and 2026 for technical excellence,
 innovation, leadership, ownership, collaboration, and delivery impact.
 
-<p class="skill-cloud">
+<div class="award-grid">
   <span>3x Quarterly Team Award Winner</span>
   <span>2x Superstar Award Winner</span>
   <span>4x Technical Star Recognition</span>
-  <span>We-NOT-Me</span>
-  <span>Going-the-extra-mile</span>
+  <span>We-NOT-Me Recognition</span>
+  <span>Going-the-extra-mile Recognition</span>
   <span>Thank You Recognition</span>
-  <span>FunStar</span>
-  <span>PEP Silver</span>
+  <span>FunStar / PEP Silver</span>
   <span>Hackathon Recognition - 2017</span>
-</p>
+</div>
 
 ## Certifications
 
-**Post Graduate Program in Machine Learning & Artificial Intelligence**  
+<div class="cert-card" markdown="1">
+### Post Graduate Program in Machine Learning & Artificial Intelligence
 Credential: [Credential.net verification](https://www.credential.net/20453200-981b-4985-9ddf-2a44c5ee66cf)
 
 Covered ML, deep learning, NLP, reinforcement learning, production AI concepts,
 and MLOps foundations.
+
+<p class="project-meta">
+  <span>Machine Learning</span>
+  <span>Deep Learning</span>
+  <span>NLP</span>
+  <span>Reinforcement Learning</span>
+  <span>MLOps Foundations</span>
+  <span>Production AI</span>
+</p>
+</div>
 
 ## Thought Leadership
 
@@ -557,55 +676,80 @@ MLOps patterns, reliability, platform engineering, and leadership playbooks.
 <div markdown="1">
 **Harbinger Group** - Technical Lead, AI and ML<br>
 Aug 2024 - Present
+
+- Led GenAI and AI/ML architecture across enterprise automation, RAG, document intelligence, and LLM evaluation work.
+- Owned solution design, technical reviews, delivery planning, stakeholder communication, and production readiness.
+- Designed Azure-based event-driven systems using Azure Functions, Service Bus, Blob Storage, Azure OpenAI, Document Intelligence, and Azure AI Search.
+- Mentored engineers and improved engineering standards for AI delivery.
 </div>
 
 <div markdown="1">
 **Harbinger Group** - Senior Software Engineer<br>
 Apr 2021 - Jul 2024
+
+- Built enterprise integrations, automation workflows, APIs, and cloud-native services.
+- Contributed to AI/ML, NLP, automation, and document-processing systems.
+- Collaborated with clients and internal teams on requirements, implementation, testing, and deployment.
 </div>
 
 <div markdown="1">
 **Extentia Information Technology** - Software Engineer<br>
 Nov 2019 - Apr 2021
+
+- Delivered software engineering, automation, API, and integration work for client-facing systems.
+- Supported requirements analysis, implementation planning, testing, and deployment activities.
+- Built early exposure to cloud-aligned delivery and AI/ML-adjacent automation workflows.
 </div>
 
 <div markdown="1">
 **Symantec Software India Pvt Ltd** - Associate IT Applications Specialist<br>
 Jul 2017 - Oct 2019
+
+- Supported enterprise systems, automation, data/process workflows, and production support.
+- Improved reliability through troubleshooting, stakeholder communication, and disciplined operational execution.
+</div>
+
+<div markdown="1">
+**Symantec Software India Pvt Ltd** - Master Level Intern<br>
+Jan 2017 - Jul 2017
+
+- Worked on enterprise application support and automation foundations before moving into full-time engineering.
 </div>
 
 </div>
 
 ## Core Stack
 
-<p class="skill-cloud">
-  <span>Azure OpenAI</span>
-  <span>GPT-4</span>
-  <span>LangGraph</span>
-  <span>LangChain</span>
-  <span>Agentic AI</span>
-  <span>RAG</span>
-  <span>Llama</span>
-  <span>Azure AI Search</span>
-  <span>Azure AI Document Intelligence</span>
-  <span>OCR + LLM Pipelines</span>
-  <span>Vector Search</span>
-  <span>AI Agents</span>
-  <span>Python</span>
-  <span>Databricks</span>
-  <span>QLoRA</span>
-  <span>Gemma</span>
-  <span>Qwen</span>
-  <span>MLflow</span>
-  <span>TensorFlow</span>
-  <span>PyTorch</span>
-  <span>Docker</span>
-  <span>Kubernetes</span>
-  <span>AWS</span>
-  <span>Azure Functions</span>
-  <span>Service Bus</span>
-  <span>Microsoft Graph API</span>
-</p>
+<div class="stack-grid" markdown="1">
+<div markdown="1">
+### GenAI / LLMs
+GPT-4, Azure OpenAI, Llama, Gemma, Qwen, prompt engineering, structured extraction.
+</div>
+<div markdown="1">
+### Agentic AI
+LangGraph, LangChain, tool routing, memory, approval gates, multi-agent workflows.
+</div>
+<div markdown="1">
+### RAG
+Azure AI Search, vector search, hybrid retrieval, embeddings, chunking, grounding.
+</div>
+<div markdown="1">
+### Document AI
+Azure AI Document Intelligence, OCR, PII/PHI masking, schema validation.
+</div>
+<div markdown="1">
+### MLOps / LLMOps
+MLflow, Databricks, QLoRA, evaluation, monitoring, model lifecycle governance.
+</div>
+<div markdown="1">
+### Cloud / Backend
+Python, FastAPI, Azure Functions, Service Bus, Blob Storage, MySQL, Docker, Kubernetes.
+</div>
+<div markdown="1">
+### Leadership
+Architecture reviews, client workshops, mentoring, delivery ownership, production readiness.
+</div>
+</div>
 
 <h2 id="contact">Contact</h2>
 
