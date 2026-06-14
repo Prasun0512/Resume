@@ -465,16 +465,48 @@ production-ready AI architecture.
 
 ## Architecture Showcase
 
-```mermaid
-flowchart LR
-  Intake[Enterprise workflow intake] --> Queue[Event queue and retry policy]
-  Queue --> AI[LLM / OCR / RAG / Agent workflow]
-  AI --> Eval[Validation, confidence, and evaluation gates]
-  Eval -->|High confidence| Action[Business-system update]
-  Eval -->|Low confidence| Review[Human-in-the-loop review]
-  Action --> Observe[Audit, cost, quality, and monitoring]
-  Review --> Observe
-```
+<div class="architecture-flow" aria-label="Enterprise AI architecture flow">
+  <div class="flow-node">
+    <span>01</span>
+    <strong>Workflow Intake</strong>
+    <p>Email, document, case, HR, CRM, or knowledge workflow request.</p>
+  </div>
+  <div class="flow-arrow" aria-hidden="true">→</div>
+  <div class="flow-node">
+    <span>02</span>
+    <strong>Event Orchestration</strong>
+    <p>Queue-backed processing with retry policy, idempotency, and DLQ handling.</p>
+  </div>
+  <div class="flow-arrow" aria-hidden="true">→</div>
+  <div class="flow-node">
+    <span>03</span>
+    <strong>AI Workflow</strong>
+    <p>OCR, LLM extraction, RAG retrieval, or agentic tool orchestration.</p>
+  </div>
+  <div class="flow-arrow" aria-hidden="true">→</div>
+  <div class="flow-node">
+    <span>04</span>
+    <strong>Evaluation Gate</strong>
+    <p>Schema validation, confidence scoring, grounding checks, and policy review.</p>
+  </div>
+  <div class="flow-branch">
+    <div class="flow-node success">
+      <span>05A</span>
+      <strong>Business Action</strong>
+      <p>High-confidence updates to case, workflow, or knowledge systems.</p>
+    </div>
+    <div class="flow-node review">
+      <span>05B</span>
+      <strong>Human Review</strong>
+      <p>Low-confidence or sensitive outputs route to approval queues.</p>
+    </div>
+  </div>
+  <div class="flow-node observe">
+    <span>06</span>
+    <strong>Observability</strong>
+    <p>Audit trail, cost telemetry, quality metrics, and monitoring feedback loop.</p>
+  </div>
+</div>
 
 My architecture work emphasizes event-driven design, idempotency, DLQs, human
 approval gates, retrieval quality, AI safety controls, observability, and
