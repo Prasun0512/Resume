@@ -5,8 +5,8 @@ title: Portfolio
 
 <section class="hero" id="about">
   <div class="hero-copy">
-    <p class="eyebrow">Technical Lead - AI/ML Architect - GenAI Solution Architect</p>
-    <h1>Building enterprise <span>Agentic AI, LLM, and RAG systems</span> that move real workflows.</h1>
+    <p class="eyebrow">AI/ML Technical Lead - GenAI Solution Architect - Agentic AI & RAG Specialist</p>
+    <h1>Designing enterprise <span>AI, Agentic AI, and RAG systems</span> that transform operations.</h1>
     <p class="lead">
       I lead AI and ML delivery across Agentic AI, LLM applications, LangGraph,
       LangChain, Retrieval-Augmented Generation, intelligent document processing,
@@ -14,6 +14,7 @@ title: Portfolio
     </p>
     <div class="hero-actions">
       <a class="btn primary" href="{{ '/Prasun_Kumar.pdf' | relative_url }}">Download Resume</a>
+      <a class="btn" href="{{ '/Prasun_Kumar_AI_ML_Architect_Resume.docx' | relative_url }}">Word Resume</a>
       <a class="btn" href="https://github.com/Prasun0512">GitHub</a>
       <a class="btn" href="https://www.linkedin.com/in/prasun-kumar-1708/">LinkedIn</a>
     </div>
@@ -161,6 +162,18 @@ human-in-the-loop quality review to keep generated learning content grounded.
 learning content delivery.
 
 **Source:** Client/internal implementation. Sanitized summary only.
+</div>
+
+<div class="project-card featured" markdown="1">
+### MLflow MLOps Platform
+**Role:** AI Platform / MLOps Architecture
+
+Built a portfolio-safe MLOps reference implementation for experiment tracking,
+evaluation gates, model registry decisions, deployment readiness, and monitoring
+handoffs. The demo uses dependency-light local tracking while mapping cleanly to
+MLflow Tracking and Model Registry patterns.
+
+**Source:** Public runnable demo repository.
 </div>
 
 <div class="project-card featured" markdown="1">
@@ -352,6 +365,14 @@ skill analysis, and explainable suitability summaries.
 </div>
 
 <div class="project-card" markdown="1">
+### MLflow MLOps AI Platform
+Experiment tracking, evaluation gates, model registry decisions, deployment
+readiness, and monitoring handoffs using a local MLflow-style demo.
+
+[View Repository](https://github.com/Prasun0512/mlflow-mlops-ai-platform){: .btn }
+</div>
+
+<div class="project-card" markdown="1">
 ### Enterprise AI Architecture Showcase
 Architecture decision records, HLDs, LLDs, sequence diagrams, deployment
 patterns, security controls, and multi-tenant AI reference architectures.
@@ -442,6 +463,68 @@ foundational ML projects rather than the headline portfolio because the current
 GitHub profile is focused on enterprise GenAI, Agentic AI, RAG, LLMOps, and
 production-ready AI architecture.
 
+## Architecture Showcase
+
+```mermaid
+flowchart LR
+  Intake[Enterprise workflow intake] --> Queue[Event queue and retry policy]
+  Queue --> AI[LLM / OCR / RAG / Agent workflow]
+  AI --> Eval[Validation, confidence, and evaluation gates]
+  Eval -->|High confidence| Action[Business-system update]
+  Eval -->|Low confidence| Review[Human-in-the-loop review]
+  Action --> Observe[Audit, cost, quality, and monitoring]
+  Review --> Observe
+```
+
+My architecture work emphasizes event-driven design, idempotency, DLQs, human
+approval gates, retrieval quality, AI safety controls, observability, and
+business-system integration.
+
+## Leadership and Mentorship
+
+I operate as a technical lead across AI delivery: architecture reviews, client
+workshops, solution design, delivery planning, mentoring, review standards,
+stakeholder communication, and production-readiness gates.
+
+## Awards and Recognition
+
+Recognized consistently between 2017 and 2026 for technical excellence,
+innovation, leadership, ownership, collaboration, and delivery impact.
+
+<p class="skill-cloud">
+  <span>3x Quarterly Team Award Winner</span>
+  <span>2x Superstar Award Winner</span>
+  <span>4x Technical Star Recognition</span>
+  <span>We-NOT-Me</span>
+  <span>Going-the-extra-mile</span>
+  <span>Thank You Recognition</span>
+  <span>FunStar</span>
+  <span>PEP Silver</span>
+  <span>Hackathon Recognition - 2017</span>
+</p>
+
+## Certifications
+
+**Post Graduate Program in Machine Learning & Artificial Intelligence**  
+Credential: [Credential.net verification](https://www.credential.net/20453200-981b-4985-9ddf-2a44c5ee66cf)
+
+Covered ML, deep learning, NLP, reinforcement learning, production AI concepts,
+and MLOps foundations.
+
+## Thought Leadership
+
+I write and share practical AI engineering perspectives around Agentic AI,
+production AI agents, GenAI architecture, RAG systems, LLM reliability, AI
+governance, and emerging AI trends.
+
+[Follow my LinkedIn posts](https://www.linkedin.com/in/prasun-kumar-1708/){: .btn }
+
+## Open Source Contributions
+
+My public GitHub focuses on sanitized, interview-safe AI architecture examples:
+agentic workflows, RAG quality, document intelligence, email-to-case automation,
+MLOps patterns, reliability, platform engineering, and leadership playbooks.
+
 <h2 id="experience">Experience</h2>
 
 <div class="timeline" markdown="1">
@@ -505,6 +588,7 @@ I am based in Pune, India and open to Technical Lead, AI/ML Architect, and
 Generative AI Solution Architect roles.
 
 [Download Resume]({{ '/Prasun_Kumar.pdf' | relative_url }}){: .btn .primary }
+[Word Resume]({{ '/Prasun_Kumar_AI_ML_Architect_Resume.docx' | relative_url }}){: .btn }
 [LinkedIn](https://www.linkedin.com/in/prasun-kumar-1708/){: .btn }
 [GitHub](https://github.com/Prasun0512){: .btn }
 [YouTube](https://www.youtube.com/@AIWizardry277){: .btn }

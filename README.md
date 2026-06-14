@@ -44,6 +44,10 @@ The live site links to the resume PDF:
 
 <https://prasun0512.github.io/Resume/Prasun_Kumar.pdf>
 
+The updated AI/ML Architect Word resume is available at:
+
+<https://prasun0512.github.io/Resume/Prasun_Kumar_AI_ML_Architect_Resume.docx>
+
 ## Local Preview
 
 This is a Jekyll/GitHub Pages site. With Ruby and Bundler installed:
