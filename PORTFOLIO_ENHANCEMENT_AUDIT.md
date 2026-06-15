@@ -35,7 +35,7 @@ Audit date: June 14, 2026
 - Expand experience into a proper timeline with role-specific bullets and consistent dates.
 - Convert awards into clean badges/cards.
 - Make certification and core stack sections more structured.
-- Polish Ask AI labels as a portfolio assistant demo.
+- Polish Ask AI labels as a portfolio assistant.
 - Keep private/internal work clearly marked as sanitized summaries.
 
 ## Not Changed
