@@ -115,6 +115,7 @@ engineering standards, mentoring, and delivery ownership across AI teams.
     <button type="button" data-project-filter="document|ocr|extraction|pii|phi|azure ai document intelligence">Document AI</button>
     <button type="button" data-project-filter="automation|event-driven|service bus|azure functions|workflow|case">Automation</button>
     <button type="button" data-project-filter="mlops|llmops|mlflow|evaluation|monitoring|registry">MLOps / LLMOps</button>
+    <button type="button" data-project-filter="guardrail|jailbreak|prompt injection|ai security|policy bypass|safety">AI Security</button>
     <button type="button" data-project-filter="nlp|classification|behavior|sentence transformers|bert|toxicity">NLP</button>
     <button type="button" data-project-filter="computer vision|deepface|yolo|image|gesture|face">Computer Vision</button>
     <button type="button" data-project-filter="leadership|architecture review|technical lead|mentoring|stakeholder">Leadership</button>
@@ -276,6 +277,22 @@ MLflow Tracking and Model Registry patterns.
 ## Additional ML/AI Project Portfolio
 
 <div class="projects" markdown="1">
+
+<div class="project-card lab" markdown="1">
+### AI JailGuard - LLM Security Guardrails
+LLM safety gateway for detecting jailbreaks, prompt injection, system-prompt
+probing, secret-extraction attempts, and unsafe tool-use instructions before
+requests reach RAG, agentic AI, or Azure OpenAI workflows.
+
+<p class="project-meta">
+  <span>AI Security</span>
+  <span>Prompt Injection</span>
+  <span>Guardrails</span>
+  <span>LLMOps</span>
+</p>
+
+[View Repository](https://github.com/Prasun0512/ai-jailguard){: .btn }
+</div>
 
 <div class="project-card lab" markdown="1">
 ### AI-Powered Learning Content and HR Assistants
@@ -451,6 +468,14 @@ Experiment tracking, evaluation gates, model registry decisions, deployment
 readiness, and monitoring handoffs using a local MLflow-style demo.
 
 [View Repository](https://github.com/Prasun0512/mlflow-mlops-ai-platform){: .btn }
+</div>
+
+<div class="project-card" markdown="1">
+### AI JailGuard
+LLM jailbreak and prompt-injection guardrail service with risk scoring, policy
+decisions, audit-friendly results, API/CLI access, Docker, CI, and tests.
+
+[View Repository](https://github.com/Prasun0512/ai-jailguard){: .btn }
 </div>
 
 <div class="project-card" markdown="1">
