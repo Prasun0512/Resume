@@ -116,6 +116,7 @@ engineering standards, mentoring, and delivery ownership across AI teams.
     <button type="button" data-project-filter="automation|event-driven|service bus|azure functions|workflow|case">Automation</button>
     <button type="button" data-project-filter="mlops|llmops|mlflow|evaluation|monitoring|registry">MLOps / LLMOps</button>
     <button type="button" data-project-filter="guardrail|jailbreak|prompt injection|ai security|policy bypass|safety">AI Security</button>
+    <button type="button" data-project-filter="cybersecurity|malware|threat|soc|siem|static analysis|triage">Cyber AI</button>
     <button type="button" data-project-filter="nlp|classification|behavior|sentence transformers|bert|toxicity">NLP</button>
     <button type="button" data-project-filter="computer vision|deepface|yolo|image|gesture|face">Computer Vision</button>
     <button type="button" data-project-filter="leadership|architecture review|technical lead|mentoring|stakeholder">Leadership</button>
@@ -277,6 +278,22 @@ MLflow Tracking and Model Registry patterns.
 ## Additional ML/AI Project Portfolio
 
 <div class="projects" markdown="1">
+
+<div class="project-card lab" markdown="1">
+### AI Malware Triage Lab
+Defensive cybersecurity and ML project for static malware triage, suspicious
+script detection, explainable risk scoring, analyst review routing, and SOC-style
+escalation using sanitized samples only.
+
+<p class="project-meta">
+  <span>Cybersecurity</span>
+  <span>Malware Triage</span>
+  <span>Static Analysis</span>
+  <span>Explainable ML</span>
+</p>
+
+[View Repository](https://github.com/Prasun0512/ai-malware-triage-lab){: .btn }
+</div>
 
 <div class="project-card lab" markdown="1">
 ### AI JailGuard - LLM Security Guardrails
@@ -468,6 +485,15 @@ Experiment tracking, evaluation gates, model registry decisions, deployment
 readiness, and monitoring handoffs using a local MLflow-style demo.
 
 [View Repository](https://github.com/Prasun0512/mlflow-mlops-ai-platform){: .btn }
+</div>
+
+<div class="project-card" markdown="1">
+### AI Malware Triage Lab
+Defensive AI malware triage project with static feature extraction, explainable
+risk scoring, SOC-style review/escalation decisions, API/CLI, Docker, CI, and
+tests.
+
+[View Repository](https://github.com/Prasun0512/ai-malware-triage-lab){: .btn }
 </div>
 
 <div class="project-card" markdown="1">
