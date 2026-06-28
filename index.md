@@ -429,6 +429,11 @@ fallback strategies.
 
 ## Public AI Architecture Repositories
 
+These repositories are split between runnable AI demos and architecture
+playbooks. The playbook repositories are intentionally documentation-first
+artifacts that show design decisions, operating models, review practices, and
+production patterns.
+
 <div class="projects public-projects" markdown="1">
 
 <div class="project-card" markdown="1">
@@ -592,7 +597,7 @@ production-ready AI architecture.
 <div class="project-card lab" markdown="1">
 ### Restaurant AI Chatbot
 Legacy NLP assistant for recipe and food-domain Q&A. Kept as a foundational AI
-project; rename recommended to `restaurant-ai-chatbot`.
+project under the polished `restaurant-ai-chatbot` repository name.
 
 <p class="project-meta">
   <span>NLP</span>
@@ -600,7 +605,7 @@ project; rename recommended to `restaurant-ai-chatbot`.
   <span>AWS Lex</span>
 </p>
 
-[View Repository](https://github.com/Prasun0512/ResturantChatbot){: .btn }
+[View Repository](https://github.com/Prasun0512/restaurant-ai-chatbot){: .btn }
 </div>
 
 <div class="project-card lab" markdown="1">
