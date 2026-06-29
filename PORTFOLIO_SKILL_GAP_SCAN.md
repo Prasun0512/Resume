@@ -28,8 +28,10 @@ Date: 2026-06-28
 ## Remediation Added
 
 - Added `ai-malware-triage-lab` as a defensive cybersecurity + ML project.
+- Added `ai-soc-alert-copilot` as a defensive SOC/SIEM alert enrichment and
+  analyst-copilot project.
 - Added portfolio filter support for `Cyber AI`.
-- Added project cards for malware triage in the portfolio and profile README.
+- Added project cards for cybersecurity AI projects in the portfolio and profile README.
 
 ## Suggested Future Additions
 
@@ -38,4 +40,3 @@ Date: 2026-06-28
 - Privacy-preserving RAG and PII leakage detection
 - Secure AI gateway with rate limits, abuse monitoring, and policy controls
 - Cloud AI security posture assessment playbook
-

@@ -16,6 +16,7 @@
     { match: "document intelligence", label: "Runnable Demo" },
     { match: "email-to-case", label: "Runnable Demo" },
     { match: "resume job matcher", label: "Runnable Demo" },
+    { match: "soc alert", label: "Cyber AI Lab" },
     { match: "malware triage", label: "Cyber AI Lab" },
     { match: "jailguard", label: "Guardrails Service" },
     { match: "mlflow", label: "Runnable Demo" },

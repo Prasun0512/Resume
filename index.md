@@ -280,6 +280,23 @@ MLflow Tracking and Model Registry patterns.
 <div class="projects" markdown="1">
 
 <div class="project-card lab" markdown="1">
+### AI SOC Alert Copilot
+Defensive SOC analyst copilot for SIEM-style alert normalization, MITRE tactic
+mapping, explainable severity scoring, playbook recommendations, and
+analyst-ready summaries using sanitized alert examples.
+
+<p class="project-meta">
+  <span>Cybersecurity</span>
+  <span>SOC</span>
+  <span>SIEM</span>
+  <span>MITRE ATT&CK</span>
+  <span>Explainable AI</span>
+</p>
+
+[View Repository](https://github.com/Prasun0512/ai-soc-alert-copilot){: .btn }
+</div>
+
+<div class="project-card lab" markdown="1">
 ### AI Malware Triage Lab
 Defensive cybersecurity and ML project for static malware triage, suspicious
 script detection, explainable risk scoring, analyst review routing, and SOC-style
@@ -490,6 +507,15 @@ Experiment tracking, evaluation gates, model registry decisions, deployment
 readiness, and monitoring handoffs using a local MLflow-style demo.
 
 [View Repository](https://github.com/Prasun0512/mlflow-mlops-ai-platform){: .btn }
+</div>
+
+<div class="project-card" markdown="1">
+### AI SOC Alert Copilot
+Defensive SOC alert triage copilot with SIEM-style normalization, MITRE tactic
+mapping, playbook recommendations, explainable severity scoring, API/CLI,
+Docker, CI, and tests.
+
+[View Repository](https://github.com/Prasun0512/ai-soc-alert-copilot){: .btn }
 </div>
 
 <div class="project-card" markdown="1">
