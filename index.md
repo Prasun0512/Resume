@@ -117,6 +117,7 @@ engineering standards, mentoring, and delivery ownership across AI teams.
     <button type="button" data-project-filter="mlops|llmops|mlflow|evaluation|monitoring|registry">MLOps / LLMOps</button>
     <button type="button" data-project-filter="guardrail|jailbreak|prompt injection|ai security|policy bypass|safety">AI Security</button>
     <button type="button" data-project-filter="cybersecurity|malware|threat|soc|siem|static analysis|triage">Cyber AI</button>
+    <button type="button" data-project-filter="privacy|dlp|pii|redaction|data loss prevention|governance">Privacy AI</button>
     <button type="button" data-project-filter="nlp|classification|behavior|sentence transformers|bert|toxicity">NLP</button>
     <button type="button" data-project-filter="computer vision|deepface|yolo|image|gesture|face">Computer Vision</button>
     <button type="button" data-project-filter="leadership|architecture review|technical lead|mentoring|stakeholder">Leadership</button>
@@ -278,6 +279,23 @@ MLflow Tracking and Model Registry patterns.
 ## Additional ML/AI Project Portfolio
 
 <div class="projects" markdown="1">
+
+<div class="project-card lab" markdown="1">
+### Privacy-Preserving RAG DLP
+Enterprise RAG privacy layer for scanning user queries, retrieved chunks,
+prompt context, and model outputs for PII, secrets, and data-loss risk before
+returning citation-safe answers.
+
+<p class="project-meta">
+  <span>Privacy AI</span>
+  <span>RAG</span>
+  <span>DLP</span>
+  <span>PII Redaction</span>
+  <span>Governance</span>
+</p>
+
+[View Repository](https://github.com/Prasun0512/privacy-preserving-rag-dlp){: .btn }
+</div>
 
 <div class="project-card lab" markdown="1">
 ### AI SOC Alert Copilot
@@ -507,6 +525,15 @@ Experiment tracking, evaluation gates, model registry decisions, deployment
 readiness, and monitoring handoffs using a local MLflow-style demo.
 
 [View Repository](https://github.com/Prasun0512/mlflow-mlops-ai-platform){: .btn }
+</div>
+
+<div class="project-card" markdown="1">
+### Privacy-Preserving RAG DLP
+Privacy and data-loss-prevention controls for RAG with PII detection, redaction,
+sensitive chunk filtering, output leakage checks, audit trails, API/CLI, Docker,
+CI, and tests.
+
+[View Repository](https://github.com/Prasun0512/privacy-preserving-rag-dlp){: .btn }
 </div>
 
 <div class="project-card" markdown="1">
