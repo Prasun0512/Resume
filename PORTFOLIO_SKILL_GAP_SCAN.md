@@ -24,6 +24,7 @@ Date: 2026-06-28
 - Adversarial ML and model abuse detection
 - Privacy engineering and data-loss prevention patterns
 - Cloud security posture for AI workloads
+- Kubernetes deployment and cloud platform engineering for LLM services
 
 ## Remediation Added
 
@@ -32,7 +33,9 @@ Date: 2026-06-28
   analyst-copilot project.
 - Added `privacy-preserving-rag-dlp` as a RAG privacy, PII redaction, and
   data-loss-prevention project.
-- Added portfolio filter support for `Cyber AI` and `Privacy AI`.
+- Added `production-llm-platform-on-kubernetes` as a FastAPI, Docker,
+  Kubernetes, autoscaling, metrics, and platform-operations project.
+- Added portfolio filter support for `Cyber AI`, `Privacy AI`, and `Cloud / Kubernetes`.
 - Added project cards for cybersecurity AI projects in the portfolio and profile README.
 
 ## Suggested Future Additions

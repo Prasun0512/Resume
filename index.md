@@ -115,6 +115,7 @@ engineering standards, mentoring, and delivery ownership across AI teams.
     <button type="button" data-project-filter="document|ocr|extraction|pii|phi|azure ai document intelligence">Document AI</button>
     <button type="button" data-project-filter="automation|event-driven|service bus|azure functions|workflow|case">Automation</button>
     <button type="button" data-project-filter="mlops|llmops|mlflow|evaluation|monitoring|registry">MLOps / LLMOps</button>
+    <button type="button" data-project-filter="kubernetes|docker|fastapi|cloud platform|microservices|hpa|helm">Cloud / Kubernetes</button>
     <button type="button" data-project-filter="guardrail|jailbreak|prompt injection|ai security|policy bypass|safety">AI Security</button>
     <button type="button" data-project-filter="cybersecurity|malware|threat|soc|siem|static analysis|triage">Cyber AI</button>
     <button type="button" data-project-filter="privacy|dlp|pii|redaction|data loss prevention|governance">Privacy AI</button>
@@ -279,6 +280,23 @@ MLflow Tracking and Model Registry patterns.
 ## Additional ML/AI Project Portfolio
 
 <div class="projects" markdown="1">
+
+<div class="project-card lab" markdown="1">
+### Production LLM Platform on Kubernetes
+FastAPI-based LLM gateway platform with provider routing, prompt registry,
+policy checks, usage budgeting, health/metrics endpoints, Docker packaging,
+Kubernetes manifests, autoscaling, network policy, and production runbooks.
+
+<p class="project-meta">
+  <span>FastAPI</span>
+  <span>Kubernetes</span>
+  <span>Docker</span>
+  <span>LLMOps</span>
+  <span>Platform Engineering</span>
+</p>
+
+[View Repository](https://github.com/Prasun0512/production-llm-platform-on-kubernetes){: .btn }
+</div>
 
 <div class="project-card lab" markdown="1">
 ### Privacy-Preserving RAG DLP
@@ -525,6 +543,15 @@ Experiment tracking, evaluation gates, model registry decisions, deployment
 readiness, and monitoring handoffs using a local MLflow-style demo.
 
 [View Repository](https://github.com/Prasun0512/mlflow-mlops-ai-platform){: .btn }
+</div>
+
+<div class="project-card" markdown="1">
+### Production LLM Platform on Kubernetes
+Enterprise LLM gateway reference with FastAPI APIs, provider abstraction,
+prompt registry, policy and budget controls, Prometheus-style metrics,
+Kubernetes manifests, HPA, PDB, network policy, Docker, CI, and tests.
+
+[View Repository](https://github.com/Prasun0512/production-llm-platform-on-kubernetes){: .btn }
 </div>
 
 <div class="project-card" markdown="1">
