@@ -13,7 +13,7 @@ title: Portfolio
       AI systems for enterprise workflows.
     </p>
     <div class="hero-actions">
-      <a class="btn primary" href="{{ '/Prasun_Kumar.pdf' | relative_url }}">Download Resume</a>
+      <a class="btn primary" href="{{ '/Prasun_Kumar_AI_ML_Architect_Resume.pdf' | relative_url }}">Download Resume</a>
       <a class="btn" href="{{ '/Prasun_Kumar_AI_ML_Architect_Resume.docx' | relative_url }}">Word Resume</a>
       <a class="btn" href="https://github.com/Prasun0512">GitHub</a>
       <a class="btn" href="https://www.linkedin.com/in/prasun-kumar-1708/">LinkedIn</a>
@@ -892,7 +892,7 @@ Architecture reviews, client workshops, mentoring, delivery ownership, productio
 I am based in Pune, India and open to Technical Lead, AI/ML Architect, and
 Generative AI Solution Architect roles.
 
-[Download Resume]({{ '/Prasun_Kumar.pdf' | relative_url }}){: .btn .primary }
+[Download Resume]({{ '/Prasun_Kumar_AI_ML_Architect_Resume.pdf' | relative_url }}){: .btn .primary }
 [Word Resume]({{ '/Prasun_Kumar_AI_ML_Architect_Resume.docx' | relative_url }}){: .btn }
 [LinkedIn](https://www.linkedin.com/in/prasun-kumar-1708/){: .btn }
 [GitHub](https://github.com/Prasun0512){: .btn }

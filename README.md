@@ -42,7 +42,7 @@ production-readiness notes, and sanitized case-study summaries.
 
 The live site links to the resume PDF:
 
-<https://prasun0512.github.io/Resume/Prasun_Kumar.pdf>
+<https://prasun0512.github.io/Resume/Prasun_Kumar_AI_ML_Architect_Resume.pdf>
 
 The updated AI/ML Architect Word resume is available at:
 
@@ -70,7 +70,8 @@ http://localhost:4000/Resume/
 - `_layouts/default.html` - site shell and header
 - `assets/css/style.scss` - custom portfolio styling
 - `assets/js/ai-cursor.js` - interactive cursor trail effect
-- `Prasun_Kumar.pdf` - downloadable resume
+- `Prasun_Kumar_AI_ML_Architect_Resume.pdf` - downloadable resume
+- `Prasun_Kumar_AI_ML_Architect_Resume.docx` - editable Word resume
 
 ## Notes
 
