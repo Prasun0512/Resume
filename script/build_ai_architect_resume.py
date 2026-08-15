@@ -107,7 +107,7 @@ def build() -> None:
     summary.paragraph_format.line_spacing = 1.05
     set_run(
         summary.add_run(
-            "AI/ML Technical Lead and GenAI Solution Architect with 8.5+ years of software engineering experience, including full-time engineering work since July 2017. Designs and delivers enterprise AI systems across Agentic AI, LLM applications, RAG, document intelligence, OCR + LLM extraction, AI automation, and cloud-native platforms. Strong focus on production readiness: event-driven architecture, human-in-the-loop review, idempotency, retries, DLQs, evaluation gates, PII controls, observability, and cost-aware LLM engineering."
+            "AI/ML Technical Lead and GenAI Solution Architect with 9+ years of full-time software engineering experience since July 2017. Designs and delivers enterprise AI systems across Agentic AI, Large Language Model (LLM) applications, Retrieval-Augmented Generation (RAG), document intelligence, OCR + LLM extraction, AI automation, and cloud-native platforms. Strong focus on production readiness: event-driven architecture, human-in-the-loop review, idempotency, retries, dead-letter queues (DLQs), evaluation gates, privacy controls, observability, and cost-aware LLM engineering."
         ),
         size=9.7,
     )
@@ -116,14 +116,14 @@ def build() -> None:
     add_compact_line(doc, "AI & GenAI", "LLMs, GPT, Llama, Gemma, Qwen, Mistral, IBM Granite, prompt engineering, structured extraction")
     add_compact_line(doc, "Agentic AI", "LangGraph, LangChain, multi-agent workflows, tool calling, function calling, memory, approval gates")
     add_compact_line(doc, "RAG", "vector search, semantic search, hybrid search, embeddings, chunking, metadata filtering, retrieval evaluation")
-    add_compact_line(doc, "ML / DL", "Scikit-Learn, XGBoost, NLP, classification, recommendation systems, feature engineering, PyTorch, TensorFlow, Hugging Face")
+    add_compact_line(doc, "ML / DL", "scikit-learn, XGBoost, NLP, classification, recommendation systems, feature engineering, PyTorch, TensorFlow, Hugging Face")
     add_compact_line(doc, "MLOps / LLMOps", "MLflow, Docker, Kubernetes, CI/CD, model registry, experiment tracking, evaluation, monitoring")
     add_compact_line(doc, "Cloud / Backend", "Azure OpenAI, Azure Functions, Azure AI Search, Blob Storage, Service Bus, Azure Document Intelligence, Python, FastAPI, REST APIs, PostgreSQL, MySQL")
 
     add_heading(doc, "Professional Experience")
     add_role(
         doc,
-        "Technical Lead, AI and ML",
+        "Associate Technical Lead / Technical Lead, AI and ML",
         "Harbinger Group",
         "Aug 2024 - Present",
         [
@@ -142,7 +142,7 @@ def build() -> None:
         "Harbinger Group",
         "Apr 2021 - Jul 2024",
         [
-            "Delivered enterprise software and AI/ML-adjacent systems across backend services, automation workflows, integrations, and data-driven applications.",
+            "Delivered enterprise software and AI/ML-adjacent systems across backend services, automation workflows, integrations, document processing, and data-driven applications.",
             "Built and integrated APIs, data-processing flows, automation utilities, and reporting components with emphasis on maintainability and reliability.",
             "Collaborated with product, QA, DevOps, and client stakeholders to convert business requirements into scalable technical implementations.",
             "Improved engineering delivery through code reviews, reusable patterns, troubleshooting support, and mentoring of junior engineers.",
@@ -150,12 +150,13 @@ def build() -> None:
     )
     add_role(
         doc,
-        "Software Engineer",
+        "Software Professional",
         "Extentia Information Technology",
         "Nov 2019 - Apr 2021",
         [
-            "Developed backend and integration solutions using Python/.NET-style enterprise engineering practices, REST APIs, database workflows, and cloud-aligned delivery patterns.",
-            "Participated in requirement analysis, implementation planning, testing support, and production troubleshooting for client-facing systems.",
+            "Developed backend, ETL, and integration solutions using Python, pandas, REST APIs, database workflows, and cloud-aligned delivery patterns.",
+            "Implemented NLP chatbot patterns using intent recognition, entity extraction, dialogue flow, BERT-style embeddings, and Elasticsearch search workflows.",
+            "Built AI/automation prototypes including resume parsing and ATS matching, translation API patterns, and computer-vision based attendance workflows.",
         ],
     )
     add_role(
@@ -165,7 +166,8 @@ def build() -> None:
         "Jul 2017 - Oct 2019",
         [
             "Supported enterprise application engineering, automation, data workflows, and operational reliability for internal business systems.",
-            "Built early foundation in production support, stakeholder communication, incident analysis, and disciplined engineering execution.",
+            "Built Python automation for database patching, refreshes, MySQL backups, SOX audit reporting, and LMS JSON-template conversion.",
+            "Created Flask/MySQL dashboards for ServiceNow tickets and server-performance visibility, improving operational productivity by 30%.",
         ],
     )
     add_role(
@@ -185,6 +187,7 @@ def build() -> None:
         ("Agentic AI Multi-Agent Platform", "Agentic AI Specialist", "Planner, research, retrieval, validator, executor, tool routing, human approval, retry, memory, and audit-trace patterns using LangGraph-style orchestration."),
         ("AI Behavioral Scoring Platform", "Technical Lead", "NLP/text classification experimentation using BERT/RoBERTa/SentenceTransformers/XGBoost-style patterns, multilingual support considerations, threshold calibration, and evaluation practices."),
         ("MLflow MLOps Platform", "AI Platform / MLOps", "Experiment tracking, evaluation gates, registry decisions, deployment readiness, monitoring handoffs, model lifecycle controls, and production governance patterns."),
+        ("Privacy-Preserving RAG and LLM Security", "AI Governance / Security", "PII redaction, prompt-injection checks, jailbreak detection, DLP controls, audit evidence, and responsible AI review gates demonstrated through sanitized GitHub projects."),
     ]
     for name, role, detail in projects:
         add_bullet(doc, f"{name} ({role}): {detail}")
@@ -197,13 +200,17 @@ def build() -> None:
         "document-intelligence-llm-pipeline - OCR + LLM extraction pipeline with redaction, schema validation, confidence scoring, and review routing",
         "email-to-case-genai-automation - event-driven GenAI automation with idempotency, retries, DLQ, validation, and audit logs",
         "ai-resume-job-matcher - explainable resume/JD matching with skill extraction, weighted scoring, gaps, and responsible AI notes",
+        "production-llm-platform-on-kubernetes - FastAPI LLM gateway, prompt registry, policy checks, metrics, Docker, and Kubernetes manifests",
+        "privacy-preserving-rag-dlp - privacy layer for RAG with PII/secret detection, redaction, policy decisions, citations, tests, Docker, and CI",
+        "ai-jailguard / ai-soc-alert-copilot - defensive LLM security and SOC triage demos with APIs, CLI workflows, tests, Docker, and CI",
     ]
     for repo in repos:
         add_bullet(doc, repo)
 
     add_heading(doc, "Education and Certification")
-    add_bullet(doc, "Post Graduate Program in Machine Learning & Artificial Intelligence - Credential.net: credential.net/20453200-981b-4985-9ddf-2a44c5ee66cf")
-    add_bullet(doc, "Program coverage: machine learning, deep learning, NLP, reinforcement learning, MLOps, and production AI foundations.")
+    add_bullet(doc, "Post Graduate Program in Machine Learning & Artificial Intelligence - Credential: credential.net/20453200-981b-4985-9ddf-2a44c5ee66cf")
+    add_bullet(doc, "Master of Computer Applications (MCA), Artificial Intelligence - Pune University, 2017.")
+    add_bullet(doc, "Bachelor of Computer Applications (BCA), Computer Applications - Sikkim Manipal University, 2014.")
 
     add_heading(doc, "Awards and Recognition")
     add_bullet(doc, "3x Quarterly Team Award Winner; 2x Superstar Award Winner; 4x Technical Star Recognition.")

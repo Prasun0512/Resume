@@ -5,7 +5,7 @@ This repository powers the GitHub Pages portfolio for Prasun Kumar:
 <https://prasun0512.github.io/Resume/>
 
 The site presents a recruiter-friendly portfolio for an AI/ML Engineer,
-Technical Lead, and GenAI / Agentic AI Solution Architect with 8.5+ years of
+Technical Lead, and GenAI / Agentic AI Solution Architect with 9+ years of
 software engineering experience. It focuses on sanitized enterprise AI patterns,
 not private client code.
 

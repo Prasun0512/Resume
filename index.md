@@ -32,7 +32,7 @@ title: Portfolio
     <p>AI/ML Engineer | Technical Lead | GenAI & Agentic AI Solution Architect</p>
     <div class="hero-card-meta">
       <span>Pune, India</span>
-      <span>8.5+ years experience</span>
+      <span>9+ years experience</span>
       <span>Azure OpenAI - LangGraph - RAG - Python</span>
     </div>
   </aside>
@@ -40,7 +40,7 @@ title: Portfolio
 
 <section class="metric-grid" id="impact" aria-label="Career highlights">
   <article>
-    <strong>8.5+ Years</strong>
+    <strong>9+ Years</strong>
     <span>AI/ML + enterprise engineering</span>
   </article>
   <article>
@@ -810,7 +810,7 @@ MLOps patterns, reliability, platform engineering, and leadership playbooks.
 <div class="timeline" markdown="1">
 
 <div markdown="1">
-**Harbinger Group** - Technical Lead, AI and ML<br>
+**Harbinger Group** - Associate Technical Lead / Technical Lead, AI and ML<br>
 Aug 2024 - Present
 
 - Led GenAI and AI/ML architecture across enterprise automation, RAG, document intelligence, and LLM evaluation work.
@@ -829,12 +829,12 @@ Apr 2021 - Jul 2024
 </div>
 
 <div markdown="1">
-**Extentia Information Technology** - Software Engineer<br>
+**Extentia Information Technology** - Software Professional<br>
 Nov 2019 - Apr 2021
 
-- Delivered software engineering, automation, API, and integration work for client-facing systems.
+- Delivered backend, ETL, automation, API, and integration work for client-facing systems.
+- Implemented NLP chatbot, resume parsing, ATS matching, translation API, and computer-vision attendance patterns.
 - Supported requirements analysis, implementation planning, testing, and deployment activities.
-- Built early exposure to cloud-aligned delivery and AI/ML-adjacent automation workflows.
 </div>
 
 <div markdown="1">
@@ -842,7 +842,8 @@ Nov 2019 - Apr 2021
 Jul 2017 - Oct 2019
 
 - Supported enterprise systems, automation, data/process workflows, and production support.
-- Improved reliability through troubleshooting, stakeholder communication, and disciplined operational execution.
+- Built Python automation for database patching, MySQL backups, SOX reporting, and LMS JSON-template conversion.
+- Created Flask/MySQL dashboards for ServiceNow tickets and server-performance visibility.
 </div>
 
 <div markdown="1">

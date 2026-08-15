@@ -110,8 +110,10 @@ def escape(text: str) -> str:
 
 def is_role_line(text: str) -> bool:
     role_markers = (
+        "Associate Technical Lead / Technical Lead, AI and ML |",
         "Technical Lead, AI and ML |",
         "Senior Software Engineer |",
+        "Software Professional |",
         "Software Engineer |",
         "Associate IT Applications Specialist |",
         "Master Level Intern |",

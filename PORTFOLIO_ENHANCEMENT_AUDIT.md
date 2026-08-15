@@ -15,7 +15,7 @@ Audit date: June 14, 2026
 
 - Skill filter could show the empty-state message incorrectly because the empty state relied only on the HTML `hidden` attribute and the script did not force an initial filter pass.
 - The portfolio had too many projects competing for attention near the top.
-- Experience timeline was too thin for an 8.5+ year technical lead profile.
+- Experience timeline was too thin for a senior AI/ML technical lead profile.
 - Awards, certification, and core stack sections were present but compressed.
 - Architecture showcase had only one diagram image; the requested enterprise patterns benefit from multiple architecture cards.
 

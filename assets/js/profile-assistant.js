@@ -5,22 +5,22 @@
     name: "Prasun Kumar",
     title: "AI/ML Engineer | Technical Lead | GenAI & Agentic AI Solution Architect",
     location: "Pune, India",
-    totalExperience: "8.5+ years",
+    totalExperience: "9+ years",
     contact: {
-      email: "cehprasunsinha@gmail.com",
+      email: "cehprasunsinha@yahoo.com",
       linkedin: "https://www.linkedin.com/in/prasun-kumar-1708/",
       github: "https://github.com/Prasun0512",
       portfolio: "https://prasun0512.github.io/Resume/"
     },
     summary: [
-      "Prasun Kumar is an AI/ML Engineer, Technical Lead, and GenAI & Agentic AI Solution Architect with 8.5+ years of experience.",
+      "Prasun Kumar is an AI/ML Engineer, Technical Lead, and GenAI & Agentic AI Solution Architect with 9+ years of full-time software engineering experience.",
       "He focuses on Agentic AI, LLM applications, LangGraph, LangChain, RAG systems, Azure OpenAI, AI automation, document intelligence, OCR plus LLM pipelines, and production-ready AI engineering.",
       "His work spans healthcare, insurance, HRTech, EdTech, background verification, learning platforms, and enterprise workflow automation."
     ],
     experience: [
       {
         company: "Harbinger Group",
-        role: "Technical Lead, AI and ML",
+        role: "Associate Technical Lead / Technical Lead, AI and ML",
         dates: "Aug 2024 - Present",
         focus: "Enterprise GenAI, AI automation, RAG, document intelligence, LLM workflows, and solution architecture."
       },
@@ -32,7 +32,7 @@
       },
       {
         company: "Extentia Information Technology",
-        role: "Software Engineer",
+        role: "Software Professional",
         dates: "Nov 2019 - Apr 2021",
         focus: "Enterprise application engineering, automation workflows, APIs, and integration components."
       },
@@ -265,7 +265,7 @@
       "Lead with production AI architecture: Azure OpenAI, RAG, document intelligence, event-driven automation, and governance.",
       "Use the email-to-case automation and document intelligence pipeline as proof of real enterprise workflow impact.",
       "Highlight LangGraph/LangChain and multi-agent workflow projects when the JD mentions agents, orchestration, or automation.",
-      "Mention 8.5+ years, Technical Lead ownership, architecture reviews, client workshops, and cross-functional delivery."
+      "Mention 9+ years, Technical Lead ownership, architecture reviews, client workshops, and cross-functional delivery."
     ];
 
     return "<p><strong>JD suitability:</strong> " + rating + " - estimated " + percent + "% fit based on public resume and portfolio signals.</p>" +
