@@ -22,7 +22,7 @@
         company: "Harbinger Group",
         role: "Associate Technical Lead / Technical Lead, AI and ML",
         dates: "Aug 2024 - Present",
-        focus: "Enterprise GenAI, AI automation, RAG, document intelligence, LLM workflows, and solution architecture."
+        focus: "Enterprise GenAI, HAS platform architecture, Discovery Agent, Automation Tester, EvalAI Pro, RAG, document intelligence, LLM workflows, and solution architecture."
       },
       {
         company: "Harbinger Group",
@@ -44,6 +44,11 @@
       }
     ],
     projects: [
+      {
+        name: "HAS Multi-Tenant Azure GenAI Platform",
+        keywords: ["has", "discovery agent", "automation tester", "evalai", "brd", "gap", "jira", "ado", "xray", "playwright", "azure functions", "service bus"],
+        answer: "Prasun works on HAS platform capabilities spanning Discovery Agent, Automation Tester, and EvalAI Pro. The platform uses Azure Functions, Service Bus, Blob Storage, PostgreSQL, Azure OpenAI, Azure AI Search, FastAPI, React/TypeScript, Jira/ADO integration, Playwright API/UI automation, and evaluation patterns for multi-tenant enterprise AI workflows."
+      },
       {
         name: "GenAI Email-to-Case Automation Platform",
         keywords: ["email", "case", "azure functions", "service bus", "blob", "graph api", "ocr", "document intelligence", "azure openai", "gpt-4", "trackops"],

@@ -107,7 +107,7 @@ def build() -> None:
     summary.paragraph_format.line_spacing = 1.05
     set_run(
         summary.add_run(
-            "AI/ML Technical Lead and GenAI Solution Architect with 9+ years of full-time software engineering experience since July 2017. Designs and delivers enterprise AI systems across Agentic AI, Large Language Model (LLM) applications, Retrieval-Augmented Generation (RAG), document intelligence, OCR + LLM extraction, AI automation, and cloud-native platforms. Strong focus on production readiness: event-driven architecture, human-in-the-loop review, idempotency, retries, dead-letter queues (DLQs), evaluation gates, privacy controls, observability, and cost-aware LLM engineering."
+            "AI/ML Technical Lead and GenAI Solution Architect with 9+ years of full-time software engineering experience since July 2017. Designs and delivers enterprise AI platforms across Agentic AI, Large Language Model (LLM) applications, Retrieval-Augmented Generation (RAG), document intelligence, AI automation, automated testing, and cloud-native integration. Strong focus on architecture ownership, stakeholder alignment, production readiness, event-driven design, human-in-the-loop controls, idempotency, retries, dead-letter queues (DLQs), privacy controls, observability, and cost-aware LLM engineering."
         ),
         size=9.7,
     )
@@ -118,7 +118,8 @@ def build() -> None:
     add_compact_line(doc, "RAG", "vector search, semantic search, hybrid search, embeddings, chunking, metadata filtering, retrieval evaluation")
     add_compact_line(doc, "ML / DL", "scikit-learn, XGBoost, NLP, classification, recommendation systems, feature engineering, PyTorch, TensorFlow, Hugging Face")
     add_compact_line(doc, "MLOps / LLMOps", "MLflow, Docker, Kubernetes, CI/CD, model registry, experiment tracking, evaluation, monitoring")
-    add_compact_line(doc, "Cloud / Backend", "Azure OpenAI, Azure Functions, Azure AI Search, Blob Storage, Service Bus, Azure Document Intelligence, Python, FastAPI, REST APIs, PostgreSQL, MySQL")
+    add_compact_line(doc, "Platform / Cloud", "Azure OpenAI, AI Foundry patterns, Azure Functions, Service Bus, Blob Storage, Azure AI Search, Document Intelligence, FastAPI, PostgreSQL, MySQL")
+    add_compact_line(doc, "Leadership", "solution architecture, delivery planning, design reviews, stakeholder workshops, mentoring, production readiness, governance")
 
     add_heading(doc, "Professional Experience")
     add_role(
@@ -127,8 +128,10 @@ def build() -> None:
         "Harbinger Group",
         "Aug 2024 - Present",
         [
-            "Lead architecture and delivery for enterprise GenAI, Agentic AI, RAG, document intelligence, and AI automation initiatives across Azure-based workflows.",
+            "Lead architecture and delivery for enterprise GenAI, Agentic AI, RAG, document intelligence, AI automation, and AI evaluation initiatives across Azure-based workflows.",
+            "Architected HAS platform capabilities spanning Discovery Agent, Automation Tester, and EvalAI Pro: multi-tenant SaaS UI/API, Azure Functions, Service Bus, Blob Storage, PostgreSQL, Azure OpenAI, Azure AI Search, and Jira/Azure DevOps integrations.",
             "Architected a GenAI email-to-case automation platform using Azure Functions, Service Bus, Blob Storage, Azure OpenAI, OCR/document intelligence, MySQL, Graph API, and case-management integrations.",
+            "Designed an AI-driven Automation Tester pipeline that converts Jira/ADO work items into LLM-generated test cases and Playwright API/UI scripts, executes them, and routes results/defects to Xray/ADO/Jira.",
             "Improved document extraction accuracy by 60%+ through better OCR normalization, prompt/schema design, confidence scoring, validation, and human review loops.",
             "Designed RAG patterns with chunking, semantic/hybrid retrieval, metadata filtering, citation support, and quality evaluation to improve grounded knowledge discovery.",
             "Led behavior scoring and text classification work using NLP/LLM patterns, including Llama/Gemma/Qwen experimentation, QLoRA fine-tuning concepts, adapter lifecycle practices, and evaluation dashboards.",
@@ -184,10 +187,11 @@ def build() -> None:
     projects = [
         ("GenAI-Powered Email-to-Case Automation Platform", "Technical Lead / AI Solution Architect", "Email ingestion, OCR, LLM extraction, automated case creation, Azure OpenAI, Azure Functions, Service Bus, Blob Storage, MySQL, retry handling, idempotency, audit trail, and human validation."),
         ("Enterprise RAG Knowledge Platform", "RAG Architect", "Document ingestion, chunking, embeddings, hybrid retrieval, Azure AI Search patterns, retrieval APIs, citations, confidence thresholds, and evaluation metrics."),
+        ("HAS Multi-Tenant Azure GenAI Platform", "AI Platform Architect / Technical Lead", "Discovery documents to redacted RAG index, multi-agent analysis, BRD/GAP generation, Jira/ADO work-item sync, tenant-scoped config, retries, observability, and production-parity local debugging."),
+        ("AI-Driven Automation Tester Platform", "AI Automation Architect", "Jira/ADO story intake, LLM test-case generation, Playwright API/UI script generation, Service Bus handoffs, Blob report storage, Xray/ADO result sync, and Jira Bug creation through existing reporting flows."),
         ("Agentic AI Multi-Agent Platform", "Agentic AI Specialist", "Planner, research, retrieval, validator, executor, tool routing, human approval, retry, memory, and audit-trace patterns using LangGraph-style orchestration."),
         ("AI Behavioral Scoring Platform", "Technical Lead", "NLP/text classification experimentation using BERT/RoBERTa/SentenceTransformers/XGBoost-style patterns, multilingual support considerations, threshold calibration, and evaluation practices."),
-        ("MLflow MLOps Platform", "AI Platform / MLOps", "Experiment tracking, evaluation gates, registry decisions, deployment readiness, monitoring handoffs, model lifecycle controls, and production governance patterns."),
-        ("Privacy-Preserving RAG and LLM Security", "AI Governance / Security", "PII redaction, prompt-injection checks, jailbreak detection, DLP controls, audit evidence, and responsible AI review gates demonstrated through sanitized GitHub projects."),
+        ("EvalAI Pro and LLM Evaluation", "LLMOps / Evaluation", "Agent evaluation patterns using RAGAS, DeepEval, MLflow-style tracking, run metrics, drift analysis, and artifact persistence for release-readiness decisions."),
     ]
     for name, role, detail in projects:
         add_bullet(doc, f"{name} ({role}): {detail}")

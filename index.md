@@ -816,6 +816,7 @@ Aug 2024 - Present
 - Led GenAI and AI/ML architecture across enterprise automation, RAG, document intelligence, and LLM evaluation work.
 - Owned solution design, technical reviews, delivery planning, stakeholder communication, and production readiness.
 - Designed Azure-based event-driven systems using Azure Functions, Service Bus, Blob Storage, Azure OpenAI, Document Intelligence, and Azure AI Search.
+- Architected HAS platform capabilities across Discovery Agent, Automation Tester, and EvalAI Pro, including multi-tenant SaaS APIs, document-to-BRD/GAP workflows, Jira/ADO integration, Playwright API/UI automation, and LLM evaluation patterns.
 - Mentored engineers and improved engineering standards for AI delivery.
 </div>
 
