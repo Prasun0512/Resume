@@ -18,11 +18,16 @@ PDF = ROOT / "Prasun_Kumar_AI_ML_Architect_Resume.pdf"
 SECTION_HEADINGS = {
     "PROFESSIONAL SUMMARY",
     "CORE SKILLS",
+    "CORE EXPERTISE",
     "PROFESSIONAL EXPERIENCE",
     "SELECTED AI ARCHITECTURE PROJECTS",
+    "SELECTED ARCHITECTURE PROJECTS",
     "PUBLIC GITHUB PORTFOLIO",
+    "SELECTED TECHNICAL PORTFOLIO",
     "EDUCATION AND CERTIFICATION",
+    "EDUCATION & CREDENTIALS",
     "AWARDS AND RECOGNITION",
+    "AWARDS & RECOGNITION",
     "THOUGHT LEADERSHIP",
 }
 
@@ -110,6 +115,8 @@ def escape(text: str) -> str:
 
 def is_role_line(text: str) -> bool:
     role_markers = (
+        "Associate AI Specialist (G3A) |",
+        "Associate Tech Specialist (G3A) |",
         "Associate Technical Lead / Technical Lead, AI and ML |",
         "Technical Lead, AI and ML |",
         "Senior Software Engineer |",
@@ -140,7 +147,7 @@ def build_story() -> list:
             story.append(Paragraph(clean, styles["role"]))
         elif text.endswith(":") and len(text) < 75:
             story.append(Paragraph(f"<b>{clean}</b>", styles["body"]))
-        elif text.startswith(("enterprise-", "agentic-", "document-", "email-", "ai-", "mlflow-")):
+        elif text.startswith(("enterprise-", "agentic-", "document-", "email-", "ai-", "mlflow-", "production-", "privacy-")):
             story.append(Paragraph(clean, styles["compact"]))
         else:
             story.append(Paragraph(clean, styles["body"]))

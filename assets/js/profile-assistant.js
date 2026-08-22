@@ -7,7 +7,7 @@
     location: "Pune, India",
     totalExperience: "9+ years",
     contact: {
-      email: "cehprasunsinha@yahoo.com",
+      email: "cehprasunsinha@gmail.com",
       linkedin: "https://www.linkedin.com/in/prasun-kumar-1708/",
       github: "https://github.com/Prasun0512",
       portfolio: "https://prasun0512.github.io/Resume/"
@@ -48,6 +48,11 @@
         name: "HAS Multi-Tenant Azure GenAI Platform",
         keywords: ["has", "discovery agent", "automation tester", "evalai", "brd", "gap", "jira", "ado", "xray", "playwright", "azure functions", "service bus"],
         answer: "Prasun works on HAS platform capabilities spanning Discovery Agent, Automation Tester, and EvalAI Pro. The platform uses Azure Functions, Service Bus, Blob Storage, PostgreSQL, Azure OpenAI, Azure AI Search, FastAPI, React/TypeScript, Jira/ADO integration, Playwright API/UI automation, and evaluation patterns for multi-tenant enterprise AI workflows."
+      },
+      {
+        name: "AI Test Automation Copilot",
+        keywords: ["automation tester", "test automation", "playwright", "jira", "xray", "ado", "api testing", "test cases", "defect"],
+        answer: "The AI Test Automation Copilot project demonstrates a sanitized version of Prasun's AI testing platform work: story classification, endpoint-grounded test-case generation, Playwright API spec generation, and Jira-ready defect payload creation from Playwright reports."
       },
       {
         name: "GenAI Email-to-Case Automation Platform",

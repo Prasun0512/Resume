@@ -96,7 +96,7 @@ def build() -> None:
     contact.paragraph_format.space_after = Pt(6)
     set_run(
         contact.add_run(
-            "Pune, India | cehprasunsinha@yahoo.com | LinkedIn: linkedin.com/in/prasun-kumar-1708 | GitHub: github.com/Prasun0512 | Portfolio: prasun0512.github.io/Resume/"
+            "Pune, India | +91 8793147065 | cehprasunsinha@gmail.com | LinkedIn: linkedin.com/in/prasun-kumar-1708 | GitHub: github.com/Prasun0512 | Portfolio: prasun0512.github.io/Resume/"
         ),
         size=8.8,
         color=GRAY,

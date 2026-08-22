@@ -530,6 +530,15 @@ case payload creation, retries, dead-letter handling, and validation.
 </div>
 
 <div class="project-card" markdown="1">
+### AI Test Automation Copilot
+Runnable AI automation project that classifies Jira/ADO stories, generates
+endpoint-grounded test cases, emits Playwright API specs, and builds Jira-ready
+defect payloads from Playwright reports.
+
+[View Repository](https://github.com/Prasun0512/ai-test-automation-copilot){: .btn }
+</div>
+
+<div class="project-card" markdown="1">
 ### AI Resume Job Matcher
 Resume/JD matching assistant with skill extraction, semantic scoring, missing
 skill analysis, and explainable suitability summaries.

@@ -22,11 +22,13 @@ extraction, AI automation, Azure OpenAI, and production-ready AI engineering.
 - [Document Intelligence LLM Pipeline](https://github.com/Prasun0512/document-intelligence-llm-pipeline)
 - [Email-to-Case GenAI Automation](https://github.com/Prasun0512/email-to-case-genai-automation)
 - [Enterprise RAG Quality Lab](https://github.com/Prasun0512/enterprise-rag-quality-lab)
+- [AI Test Automation Copilot](https://github.com/Prasun0512/ai-test-automation-copilot)
 - [AI Resume Job Matcher](https://github.com/Prasun0512/ai-resume-job-matcher)
 
 ## Architecture Strengths
 
 - Event-driven AI automation with queues, retries, idempotency, and DLQ handling.
+- AI-assisted testing workflows with Jira/ADO story intake, Playwright API specs, and defect payloads.
 - RAG quality evaluation with chunking, retrieval metrics, citations, and review thresholds.
 - OCR + LLM extraction with PII masking, schema validation, confidence scoring, and human review.
 - Agentic AI workflow design with planner, retriever, validator, executor, tool routing, and audit logs.
