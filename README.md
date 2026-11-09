@@ -4,10 +4,10 @@ This repository powers the GitHub Pages portfolio for Prasun Kumar:
 
 <https://prasun0512.github.io/Resume/>
 
-The site presents a recruiter-friendly portfolio for an AI/ML Engineer,
-Technical Lead, and GenAI / Agentic AI Solution Architect with 9+ years of
-software engineering experience. It focuses on sanitized enterprise AI patterns,
-not private client code.
+The site presents Prasun Kumar, Senior Application Developer (Band 07) at
+IBM India, Pune, joined 3 November 2026. He has 9+ years of engineering
+experience and prior technical leadership at Harbinger Group. Public projects
+demonstrate AI engineering, architecture, release governance, and delivery planning.
 
 ## About
 
@@ -17,6 +17,8 @@ extraction, AI automation, Azure OpenAI, and production-ready AI engineering.
 
 ## Featured Projects
 
+- [ML Release Governance](https://github.com/Prasun0512/ml-release-governance)
+- [AI Delivery Planner](https://github.com/Prasun0512/ai-delivery-planner)
 - [Enterprise AI/ML Case Studies](https://github.com/Prasun0512/enterprise-ai-ml-case-studies)
 - [Agentic AI LangGraph Workflows](https://github.com/Prasun0512/agentic-ai-langgraph-workflows)
 - [Document Intelligence LLM Pipeline](https://github.com/Prasun0512/document-intelligence-llm-pipeline)
@@ -46,9 +48,10 @@ The live site links to the resume PDF:
 
 <https://prasun0512.github.io/Resume/Prasun_Kumar_AI_ML_Architect_Resume.pdf>
 
-The updated AI/ML Architect Word resume is available at:
-
-<https://prasun0512.github.io/Resume/Prasun_Kumar_AI_ML_Architect_Resume.docx>
+The PDF supplied on 9 November 2026 is the authoritative resume and is published
+without changing its content. It includes the IBM joining date and prior-role
+projects. The superseded Word download has been retired to avoid conflicting
+employment details. Previous versions remain in Git history.
 
 ## Local Preview
 
@@ -73,7 +76,6 @@ http://localhost:4000/Resume/
 - `assets/css/style.scss` - custom portfolio styling
 - `assets/js/ai-cursor.js` - interactive cursor trail effect
 - `Prasun_Kumar_AI_ML_Architect_Resume.pdf` - downloadable resume
-- `Prasun_Kumar_AI_ML_Architect_Resume.docx` - editable Word resume
 
 ## Notes
 

@@ -11,6 +11,8 @@
   const normalize = (value) => value.toLowerCase().replace(/\s+/g, " ").trim();
 
   const repoTypes = [
+    { match: "ml release governance", label: "Release Evaluation" },
+    { match: "ai delivery planner", label: "Delivery Planning" },
     { match: "langgraph", label: "Runnable Demo" },
     { match: "rag quality", label: "Evaluation Framework" },
     { match: "document intelligence", label: "Runnable Demo" },

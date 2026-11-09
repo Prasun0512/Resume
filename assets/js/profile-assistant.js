@@ -3,7 +3,7 @@
 
   var profile = {
     name: "Prasun Kumar",
-    title: "AI/ML Engineer | Technical Lead | GenAI & Agentic AI Solution Architect",
+    title: "Senior Application Developer at IBM | AI/ML, Agentic AI, GenAI and RAG",
     location: "Pune, India",
     totalExperience: "9+ years",
     contact: {
@@ -13,21 +13,33 @@
       portfolio: "https://prasun0512.github.io/Resume/"
     },
     summary: [
-      "Prasun Kumar is an AI/ML Engineer, Technical Lead, and GenAI & Agentic AI Solution Architect with 9+ years of full-time software engineering experience.",
+      "Prasun Kumar is Senior Application Developer, Band 07, at IBM India in Pune, joined 3 November 2026. He has 9+ years of overall engineering experience and prior technical leadership at Harbinger Group.",
       "He focuses on Agentic AI, LLM applications, LangGraph, LangChain, RAG systems, Azure OpenAI, AI automation, document intelligence, OCR plus LLM pipelines, and production-ready AI engineering.",
-      "His work spans healthcare, insurance, HRTech, EdTech, background verification, learning platforms, and enterprise workflow automation."
+      "The documented enterprise projects are from prior roles. New public repositories are independent portfolio implementations. IBM project responsibilities, direct-report counts, hiring and budget ownership are not provided in the resume."
     ],
     experience: [
       {
+        company: "IBM India Pvt. Ltd., Pune",
+        role: "Senior Application Developer, Band 07",
+        dates: "Nov 2026 - Present",
+        focus: "Joined 3 November 2026. Current IBM project details are not provided in the public resume."
+      },
+      {
         company: "Harbinger Group",
-        role: "Associate Technical Lead / Technical Lead, AI and ML",
-        dates: "Aug 2024 - Present",
+        role: "Associate AI Specialist (G3A)",
+        dates: "Jul 2026 - Nov 2026",
+        focus: "GenAI solution design, enterprise RAG, AI testing, document workflows and LLM evaluation."
+      },
+      {
+        company: "Harbinger Group",
+        role: "Associate Technical Lead",
+        dates: "Jul 2024 - Jun 2026",
         focus: "Enterprise GenAI, HAS platform architecture, Discovery Agent, Automation Tester, EvalAI Pro, RAG, document intelligence, LLM workflows, and solution architecture."
       },
       {
         company: "Harbinger Group",
         role: "Senior Software Engineer",
-        dates: "Apr 2021 - Jul 2024",
+        dates: "Apr 2021 - Jun 2024",
         focus: "AI/ML applications, cloud-native engineering, NLP, computer vision, automation, and enterprise integrations."
       },
       {
@@ -45,9 +57,19 @@
     ],
     projects: [
       {
+        name: "ML Release Governance",
+        keywords: ["release governance", "model release", "bootstrap", "drift", "calibration"],
+        answer: "An independent portfolio implementation that evaluates candidate and incumbent predictions, bootstrap AUC regression, slice performance, calibration, drift, latency and cost against configurable release policies. It demonstrates evidence-based release review, not an IBM deployment."
+      },
+      {
+        name: "AI Delivery Planner",
+        keywords: ["delivery planner", "capacity", "budget", "prioritization"],
+        answer: "An independent portfolio tool using mixed-integer optimization to select AI initiatives within budget and role-capacity constraints, enforce dependencies and review prerequisites, and compare planning scenarios. Inputs are illustrative estimates, not employer results."
+      },
+      {
         name: "HAS Multi-Tenant Azure GenAI Platform",
         keywords: ["has", "discovery agent", "automation tester", "evalai", "brd", "gap", "jira", "ado", "xray", "playwright", "azure functions", "service bus"],
-        answer: "Prasun works on HAS platform capabilities spanning Discovery Agent, Automation Tester, and EvalAI Pro. The platform uses Azure Functions, Service Bus, Blob Storage, PostgreSQL, Azure OpenAI, Azure AI Search, FastAPI, React/TypeScript, Jira/ADO integration, Playwright API/UI automation, and evaluation patterns for multi-tenant enterprise AI workflows."
+        answer: "In prior roles at Harbinger, Prasun contributed to HAS capabilities spanning Discovery Agent, Automation Tester, and EvalAI Pro. The platform used Azure services, FastAPI, PostgreSQL, Jira/ADO integration, Playwright automation, and evaluation patterns. This work predates IBM."
       },
       {
         name: "AI Test Automation Copilot",
@@ -186,7 +208,7 @@
   function answerSummary() {
     return "<p><strong>Recruiter summary:</strong> " + profile.summary.join(" ") + "</p>" +
       formatList([
-        "Best fit: Technical Lead AI/ML, GenAI Solution Architect, Agentic AI Engineer, RAG Architect, AI Automation Lead.",
+        "Career focus: AI/ML Lead, AI Architect and Associate Manager opportunities. Evidence supports technical leadership, mentoring and delivery planning; direct people-management scope needs confirmation.",
         "Core strengths: Azure OpenAI, LangGraph, LangChain, RAG, OCR + LLM extraction, Azure Functions, Service Bus, AI governance, and production delivery.",
         "Public proof: GitHub portfolio includes Agentic AI LangGraph Workflows, Document Intelligence LLM Pipeline, Email-to-Case GenAI Automation, Enterprise RAG Quality Lab, and AI Resume Job Matcher."
       ]);
@@ -316,24 +338,24 @@
       return analyzeJobDescription(input);
     }
 
-    if (includesAny(text, ["summary", "summarize", "recruiter", "about", "who is", "intro"])) {
-      return answerSummary();
-    }
-
     if (includesAny(text, ["skill", "stack", "technology", "tools", "strength"])) {
       return answerSkills();
     }
 
-    if (includesAny(text, ["experience", "timeline", "company", "harbinger", "extentia", "symantec"])) {
+    if (includesAny(text, ["experience", "timeline", "company", "ibm", "current role", "joined", "harbinger", "extentia", "symantec"])) {
       return answerExperience();
     }
 
-    if (includesAny(text, ["project", "email", "case", "rag", "agent", "langgraph", "document", "ocr", "behavior", "resume matcher", "portfolio"])) {
+    if (includesAny(text, ["project", "email", "case", "rag", "agent", "langgraph", "document", "ocr", "behavior", "resume matcher", "portfolio", "release governance", "delivery planner", "capacity", "budget", "drift"])) {
       return answerProjects(input);
     }
 
     if (includesAny(text, ["contact", "email", "linkedin", "github", "location"])) {
       return answerContact();
+    }
+
+    if (includesAny(text, ["summary", "summarize", "recruiter", "about", "who is", "intro"])) {
+      return answerSummary();
     }
 
     return "<p>I can answer from Prasun's public resume and portfolio. Useful questions include:</p>" + formatList([

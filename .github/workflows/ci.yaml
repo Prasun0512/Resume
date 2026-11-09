@@ -10,6 +10,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate profile assistant
+        run: node script/test-profile.cjs
+
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'      # or '3.3'

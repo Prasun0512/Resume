@@ -6,15 +6,14 @@ title: Portfolio
 <section class="hero" id="about">
   <div class="hero-copy">
     <p class="hero-name">Prasun Kumar</p>
-    <p class="eyebrow">AI/ML Technical Lead - GenAI Solution Architect - Agentic AI & RAG Specialist</p>
+    <p class="eyebrow">Senior Application Developer at IBM - AI/ML &amp; GenAI Engineering</p>
     <h1>Designing enterprise <span>AI, Agentic AI, and RAG systems</span> that transform operations.</h1>
     <p class="lead">
-      I design production-minded GenAI, RAG, document intelligence, and agentic
-      AI systems for enterprise workflows.
+      I build GenAI, RAG, document intelligence, and agentic AI systems, with
+      prior technical leadership in architecture, mentoring, and delivery.
     </p>
     <div class="hero-actions">
       <a class="btn primary" href="{{ '/Prasun_Kumar_AI_ML_Architect_Resume.pdf' | relative_url }}">Download Resume</a>
-      <a class="btn" href="{{ '/Prasun_Kumar_AI_ML_Architect_Resume.docx' | relative_url }}">Word Resume</a>
       <a class="btn" href="https://github.com/Prasun0512">GitHub</a>
       <a class="btn" href="https://www.linkedin.com/in/prasun-kumar-1708/">LinkedIn</a>
     </div>
@@ -29,9 +28,10 @@ title: Portfolio
       {% endif %}
     </div>
     <h2>Prasun Kumar</h2>
-    <p>AI/ML Engineer | Technical Lead | GenAI & Agentic AI Solution Architect</p>
+    <p>Senior Application Developer, IBM | Agentic AI, GenAI &amp; RAG</p>
     <div class="hero-card-meta">
       <span>Pune, India</span>
+      <span>IBM India - joined 3 November 2026</span>
       <span>9+ years experience</span>
       <span>Azure OpenAI - LangGraph - RAG - Python</span>
     </div>
@@ -45,11 +45,11 @@ title: Portfolio
   </article>
   <article>
     <strong>60%+</strong>
-    <span>extraction accuracy improvement</span>
+    <span>extraction accuracy improvement in a prior role</span>
   </article>
   <article>
     <strong>77 TB+</strong>
-    <span>storage optimization impact</span>
+    <span>prior-role storage optimization impact</span>
   </article>
 </section>
 
@@ -130,7 +130,7 @@ engineering standards, mentoring, and delivery ownership across AI teams.
   <p class="filter-empty" hidden>No projects matched this skill yet.</p>
 </section>
 
-<h2 id="featured-enterprise-ai-work">Featured Enterprise AI Work</h2>
+<h2 id="featured-enterprise-ai-work">Enterprise AI Work - Prior Roles</h2>
 
 <p class="section-note">
   Sanitized architecture notes and starter implementation patterns for the
@@ -489,6 +489,28 @@ production patterns.
 
 <div class="projects public-projects" markdown="1">
 
+<div class="project-card" markdown="1" data-skills="leadership mlops evaluation governance classification">
+### ML Release Governance
+Compare candidate and incumbent models on the same holdout data. Measure AUC,
+calibration, bootstrap uncertainty, slice performance, drift, latency, and cost;
+produce a policy decision and reproducible evidence for a release review.
+
+Independent portfolio implementation using scikit-learn and SciPy.
+
+[View Repository](https://github.com/Prasun0512/ml-release-governance){: .btn }
+</div>
+
+<div class="project-card" markdown="1" data-skills="leadership delivery planning governance optimization">
+### AI Delivery Planner
+Optimize an AI initiative portfolio under budget and team-capacity constraints,
+with dependencies and governance prerequisites. Compare baseline and reduced
+capacity scenarios using a mixed-integer solver and explain the tradeoffs.
+
+Independent planning tool; scenario inputs are illustrative estimates.
+
+[View Repository](https://github.com/Prasun0512/ai-delivery-planner){: .btn }
+</div>
+
 <div class="project-card" markdown="1">
 ### Enterprise AI/ML Case Studies
 Sanitized architecture notes and starter implementation patterns for GenAI,
@@ -819,8 +841,23 @@ MLOps patterns, reliability, platform engineering, and leadership playbooks.
 <div class="timeline" markdown="1">
 
 <div markdown="1">
-**Harbinger Group** - Associate Technical Lead / Technical Lead, AI and ML<br>
-Aug 2024 - Present
+**IBM India Pvt. Ltd., Pune** - Senior Application Developer, Band 07<br>
+Nov 2026 - Present
+
+- Joined IBM India on 3 November 2026.
+- Previous AI delivery projects below describe work from earlier roles.
+</div>
+
+<div markdown="1">
+**Harbinger Group, Pune** - Associate AI Specialist (G3A)<br>
+Jul 2026 - Nov 2026
+
+- Contributed to GenAI solution design, enterprise RAG, AI-powered automation testing, document workflows, and LLM evaluation patterns.
+</div>
+
+<div markdown="1">
+**Harbinger Group** - Associate Technical Lead<br>
+Jul 2024 - Jun 2026
 
 - Led GenAI and AI/ML architecture across enterprise automation, RAG, document intelligence, and LLM evaluation work.
 - Owned solution design, technical reviews, delivery planning, stakeholder communication, and production readiness.
@@ -831,7 +868,7 @@ Aug 2024 - Present
 
 <div markdown="1">
 **Harbinger Group** - Senior Software Engineer<br>
-Apr 2021 - Jul 2024
+Apr 2021 - Jun 2024
 
 - Built enterprise integrations, automation workflows, APIs, and cloud-native services.
 - Contributed to AI/ML, NLP, automation, and document-processing systems.
@@ -870,15 +907,15 @@ Jan 2017 - Jul 2017
 <div class="stack-grid" markdown="1">
 <div markdown="1">
 ### GenAI / LLMs
-GPT-4, Azure OpenAI, Llama, Gemma, Qwen, prompt engineering, structured extraction.
+Azure OpenAI, Amazon Bedrock, Llama, Gemma, Qwen, prompt engineering, structured extraction.
 </div>
 <div markdown="1">
 ### Agentic AI
-LangGraph, LangChain, tool routing, memory, approval gates, multi-agent workflows.
+LangGraph, LangChain, CrewAI, AutoGen, tool routing, memory, approval gates, multi-agent workflows.
 </div>
 <div markdown="1">
 ### RAG
-Azure AI Search, vector search, hybrid retrieval, embeddings, chunking, grounding.
+Azure AI Search, FAISS, Chroma, BM25, hybrid retrieval, embeddings, reranking, grounding.
 </div>
 <div markdown="1">
 ### Document AI
@@ -890,7 +927,7 @@ MLflow, Databricks, QLoRA, evaluation, monitoring, model lifecycle governance.
 </div>
 <div markdown="1">
 ### Cloud / Backend
-Python, FastAPI, Azure Functions, Service Bus, Blob Storage, MySQL, Docker, Kubernetes.
+Python, FastAPI, Azure Functions, Service Bus, AWS Lambda/SQS, PostgreSQL, MySQL, Docker, Kubernetes.
 </div>
 <div markdown="1">
 ### Leadership
@@ -900,11 +937,11 @@ Architecture reviews, client workshops, mentoring, delivery ownership, productio
 
 <h2 id="contact">Contact</h2>
 
-I am based in Pune, India and open to Technical Lead, AI/ML Architect, and
-Generative AI Solution Architect roles.
+I am based in Pune, India and currently work at IBM. My professional focus is
+AI/ML engineering, solution architecture, technical leadership, and AI delivery
+management. Connect with me about these areas.
 
 [Download Resume]({{ '/Prasun_Kumar_AI_ML_Architect_Resume.pdf' | relative_url }}){: .btn .primary }
-[Word Resume]({{ '/Prasun_Kumar_AI_ML_Architect_Resume.docx' | relative_url }}){: .btn }
 [LinkedIn](https://www.linkedin.com/in/prasun-kumar-1708/){: .btn }
 [GitHub](https://github.com/Prasun0512){: .btn }
 [YouTube](https://www.youtube.com/@AIWizardry277){: .btn }
