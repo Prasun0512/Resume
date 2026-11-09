@@ -342,7 +342,7 @@
       return answerSkills();
     }
 
-    if (includesAny(text, ["experience", "timeline", "company", "ibm", "current role", "joined", "harbinger", "extentia", "symantec"])) {
+    if (includesAny(text, ["experience", "timeline", "company", "ibm", "current role", "current employer", "work now", "joined", "harbinger", "extentia", "symantec"])) {
       return answerExperience();
     }
 
