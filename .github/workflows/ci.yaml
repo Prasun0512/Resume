@@ -17,6 +17,15 @@ jobs:
       - name: Validate profile assistant
         run: node script/test-profile.cjs
 
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate published resume
+        run: |
+          python -m pip install -r script/requirements-resume.txt
+          python script/test_resume.py
+
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'      # or '3.3'

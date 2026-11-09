@@ -48,10 +48,15 @@ The live site links to the resume PDF:
 
 <https://prasun0512.github.io/Resume/Prasun_Kumar_AI_ML_Architect_Resume.pdf>
 
-The PDF supplied on 9 November 2026 is the authoritative resume and is published
-without changing its content. It includes the IBM joining date and prior-role
-projects. The superseded Word download has been retired to avoid conflicting
-employment details. Previous versions remain in Git history.
+The two-page resume was refreshed on 9 November 2026 from the supplied November
+resume and supported career details. Professional AI/ML projects are prioritized;
+independent GitHub projects are labeled separately. IBM employment starts on
+3 November 2026; prior-role projects are not attributed to IBM. The superseded
+Word download is retired. Previous versions remain in Git history.
+
+Public resume content lives in `resume/profile.json`; see [resume maintenance](resume/README.md)
+for the reproducible build and content checks. The private candidate master is
+not part of this repository.
 
 ## Local Preview
 

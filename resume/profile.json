@@ -1,0 +1,78 @@
+{
+  "name": "Prasun Kumar",
+  "headline": "AI/ML Engineering | GenAI & Agentic AI | Solution Architecture & Technical Leadership",
+  "current_role": "Senior Application Developer, IBM India",
+  "contact": "Pune, India | +91 87931 47065 | cehprasunsinha@gmail.com",
+  "links": [
+    {"label": "linkedin.com/in/prasun-kumar-1708", "url": "https://www.linkedin.com/in/prasun-kumar-1708/"},
+    {"label": "github.com/Prasun0512", "url": "https://github.com/Prasun0512"},
+    {"label": "prasun0512.github.io/Resume", "url": "https://prasun0512.github.io/Resume/"}
+  ],
+  "summary": "AI/ML engineer with 9+ years of software-engineering experience and prior technical leadership at Harbinger Group. Builds enterprise GenAI, RAG, agent workflows, document intelligence and NLP/ML solutions using Python, Azure OpenAI and cloud-native services. Combines hands-on engineering with architecture reviews, mentoring, delivery planning and stakeholder coordination. Focuses on evaluation, human review, reliability, security and production readiness. Currently Senior Application Developer at IBM India, having joined on 3 November 2026.",
+  "skills": [
+    {"label": "GenAI and agents", "text": "LangGraph, LangChain, Azure OpenAI, Amazon Bedrock, Llama, Qwen, Gemma, tool calling, state, memory, structured outputs and human approval."},
+    {"label": "RAG and document AI", "text": "Azure AI Search, embeddings, BM25/hybrid retrieval, reranking, FAISS, Chroma, OCR, Azure AI Document Intelligence and retrieval evaluation."},
+    {"label": "ML and LLMOps", "text": "scikit-learn, pandas, NumPy, PyTorch, TensorFlow, Hugging Face, NLP classification, LoRA/QLoRA, Databricks, MLflow and model evaluation."},
+    {"label": "Engineering and delivery", "text": "Python, FastAPI, SQL, PostgreSQL, MySQL, REST APIs, Azure Functions, Service Bus, Blob Storage, Docker, CI/CD, architecture reviews and mentoring."}
+  ],
+  "employment": [
+    {"company": "IBM India Pvt. Ltd., Pune", "role": "Senior Application Developer, Band 07", "dates": "Nov 2026 - Present", "bullets": ["Joined IBM India on 3 November 2026."]},
+    {"company": "Harbinger Group, Pune", "role": "Associate AI Specialist (G3A)", "dates": "Jul 2026 - Nov 2026", "bullets": ["Contributed to GenAI solution design, enterprise RAG, AI-powered automation testing, document workflows and LLM evaluation."]},
+    {"company": "Harbinger Group", "role": "Associate Technical Lead", "dates": "Jul 2024 - Jun 2026", "bullets": ["Led architecture and design reviews, code quality, mentoring, delivery planning and stakeholder coordination for AI/ML and GenAI initiatives.", "Designed document-processing and workflow solutions using Azure OpenAI, Azure AI Document Intelligence, Azure Functions and Service Bus, with validation, retries and review gates."]},
+    {"company": "Harbinger Group", "role": "Senior Software Engineer", "dates": "Apr 2021 - Jun 2024", "bullets": ["Developed Python services, machine-learning/NLP components, intelligent automation and enterprise integrations; collaborated with product, QA and engineering teams."]},
+    {"company": "Extentia Information Technology", "role": "Software Professional", "dates": "Nov 2019 - Apr 2021", "bullets": ["Built applied NLP prototypes for conversational assistants, resume parsing and semantic skill matching, alongside early computer-vision experiments."]},
+    {"company": "Symantec Software India Pvt. Ltd.", "role": "Associate IT Applications Specialist / Master Level Intern", "dates": "Jan 2017 - Oct 2019", "bullets": ["Built Python automation and application-support foundations. Full-time Associate IT Applications Specialist from July 2017; earlier period was an internship."]}
+  ],
+  "projects": [
+    {
+      "name": "GenAI Email-to-Case and Document Intelligence",
+      "bullets": [
+        "Designed extraction of email bodies and attachments into structured case records using Azure OpenAI, OCR/Azure AI Document Intelligence, Functions, Service Bus and Blob Storage.",
+        "Applied schema validation, confidence scoring, idempotency, retries, audit trails and human review. Prior project results included a 60%+ improvement in extraction accuracy."
+      ],
+      "repo": "email-to-case-genai-automation"
+    },
+    {
+      "name": "Enterprise RAG and Requirements Discovery Agent",
+      "bullets": [
+        "Built document-ingestion, chunking, metadata-enrichment and retrieval approaches using Azure AI Search, embeddings, semantic search and keyword/hybrid retrieval.",
+        "Used reranking, citation support and answer-quality evaluation to improve relevance and reduce unsupported answers; designed confidence-based review and no-answer handling."
+      ],
+      "repo": "enterprise-rag-quality-lab"
+    },
+    {
+      "name": "Agentic AI and Multi-Agent Workflow Automation",
+      "bullets": [
+        "Designed LangGraph/LangChain workflows with planner, retriever, validator and executor stages for multi-step enterprise tasks.",
+        "Applied tool routing, state and memory management, approval gates, retries and auditable execution to control automated actions and support human oversight."
+      ],
+      "repo": "agentic-ai-langgraph-workflows"
+    },
+    {
+      "name": "AI-Powered Test Automation and Gap Assessment",
+      "bullets": [
+        "Worked on LLM-assisted test generation, document-to-test workflows and environment-aware Azure/AWS AI execution using Amazon Bedrock and evaluation tooling.",
+        "Explored few-shot prompting, structured outputs, model comparisons and MLflow-tracked quality metrics with Databricks to support reviewable testing workflows."
+      ],
+      "repo": "ai-test-automation-copilot"
+    },
+    {
+      "name": "Behavioral Intelligence and ML/LLMOps",
+      "bullets": [
+        "Worked on behavior scoring and NLP classification, open-model evaluation with Qwen, Llama and Gemma, and parameter-efficient fine-tuning/adapter workflows.",
+        "Applied threshold calibration, experiment tracking and Databricks evaluation to support model-quality assessment and reproducible comparisons."
+      ],
+      "repo": null
+    }
+  ],
+  "independent": [
+    {"name": "ML Release Governance", "repo": "ml-release-governance", "text": "Model training and paired holdout evaluation with bootstrap uncertainty, slice/drift checks and latency/cost release gates; tested evidence reports for human review."},
+    {"name": "AI Delivery Planner", "repo": "ai-delivery-planner", "text": "Mixed-integer optimization of AI initiatives under budget, capacity, dependency and governance constraints; scenario comparison using illustrative planning inputs."}
+  ],
+  "education": [
+    "MCA - Savitribai Phule Pune University, 2017 | BCA - Sikkim Manipal University, 2014.",
+    "Post Graduate Program in Machine Learning and Artificial Intelligence."
+  ],
+  "credential": "https://www.credential.net/20453200-981b-4985-9ddf-2a44c5ee66cf",
+  "recognition": "Technical and team awards; hackathon recognition (2017)."
+}

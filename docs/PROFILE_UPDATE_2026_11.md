@@ -1,7 +1,9 @@
 # November 2026 profile alignment
 
-Source: the PDF supplied by Prasun on 9 November 2026. Its content is published
-unchanged under the stable resume download URL.
+Source: the November PDF supplied by Prasun, plus supported career details.
+Initially published unchanged, it was then refreshed at Prasun's request on
+9 November 2026 to prioritize actual professional AI/ML projects. The stable
+resume download URL is retained.
 
 - IBM India, Senior Application Developer, Band 07: joined 3 November 2026.
 - Harbinger, Associate AI Specialist: July-November 2026.
@@ -28,6 +30,12 @@ authority for employment facts.
 
 ## Publication maintenance
 
-The outdated Word resume and old resume builders were retired from the current
-tree; Git history retains them. This prevents downloading a conflicting timeline
-or accidentally rebuilding an older resume over the supplied PDF.
+The outdated Word resume and old resume builders were retired; Git history
+retains them. A new builder uses the reviewed public `resume/profile.json` and
+validates the resulting two-page PDF. It does not load the private candidate
+master or compensation/application notes.
+
+The revised resume leads with email-to-case/document intelligence, enterprise
+RAG, agent workflows, AI testing/gap assessment and behavioral ML. Release
+governance and delivery planning appear only in the independent-project section.
+No new IBM project or people-management responsibility is implied.
